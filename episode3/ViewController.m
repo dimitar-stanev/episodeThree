@@ -15,7 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIView *gameSceneHolderView;
 @property (weak, nonatomic) IBOutlet UIView *topBarView;
 @property (weak, nonatomic) IBOutlet UITableView *rightButtonsTable;
-
+@property (strong, nonatomic) NSMutableArray *actionsDeck;
 @end
 
 @implementation ViewController
@@ -26,8 +26,15 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.gameSceneView = [[[NSBundle mainBundle] loadNibNamed:@"GameSceneView"owner:nil options:nil] objectAtIndex:0];
     [self.gameSceneHolderView addSubview:self.gameSceneView];
+    
+    // Set tableView delegate and source
     self.rightButtonsTable.delegate = self;
     self.rightButtonsTable.dataSource = self;
+    
+    // Create Deck
+    // Test deck at the moment
+    
+    
 }
 
 - (IBAction)buttonClicked:(id)sender {
