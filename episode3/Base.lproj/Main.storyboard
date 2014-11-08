@@ -52,9 +52,9 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="actionsTableView" destination="Blq-Eg-eTN" id="rMg-hW-AO2"/>
                         <outlet property="gameSceneHolderView" destination="oDC-xW-84I" id="1qV-Ye-5hX"/>
                         <outlet property="topBarView" destination="XXO-pO-Bnf" id="s2a-Z9-zdK"/>
+                        <outlet property="rightButtonsTable" destination="Blq-Eg-eTN" id="ua8-Mo-WKG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

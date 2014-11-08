@@ -14,7 +14,7 @@
 @property (weak, nonatomic) IBOutlet GameSceneView *gameSceneView;
 @property (weak, nonatomic) IBOutlet UIView *gameSceneHolderView;
 @property (weak, nonatomic) IBOutlet UIView *topBarView;
-@property (weak, nonatomic) IBOutlet UITableView *actionsTableView;
+@property (weak, nonatomic) IBOutlet UITableView *rightButtonsTable;
 
 @end
 
@@ -26,6 +26,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.gameSceneView = [[[NSBundle mainBundle] loadNibNamed:@"GameSceneView"owner:nil options:nil] objectAtIndex:0];
     [self.gameSceneHolderView addSubview:self.gameSceneView];
+    self.rightButtonsTable.delegate = self;
+    self.rightButtonsTable.dataSource = self;
 }
 
 - (IBAction)buttonClicked:(id)sender {
