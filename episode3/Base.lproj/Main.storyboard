@@ -23,7 +23,7 @@
                                         <rect key="frame" x="8" y="19" width="365" height="2"/>
                                         <color key="tintColor" red="0.62546705160000005" green="0.17523311699999999" blue="0.1446207357" alpha="1" colorSpace="calibratedRGB"/>
                                     </progressView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="120.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uh0-NV-4bJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uh0-NV-4bJ">
                                         <rect key="frame" x="392" y="8" width="77" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.62546705163043481" green="0.17523311703013325" blue="0.14462073569995992" alpha="1" colorSpace="calibratedRGB"/>
@@ -38,9 +38,21 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDC-xW-84I">
                                 <rect key="frame" x="0.0" y="40" width="488" height="280"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6D9-MN-147">
+                                        <rect key="frame" x="431" y="240" width="57" height="40"/>
+                                        <color key="tintColor" red="0.31877926150000002" green="0.50486995589999994" blue="0.77742866850000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="highlightedColor" red="0.31877926150797475" green="0.50486995594501827" blue="0.77742866847826086" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="womens_circle_2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ggj-FX-VzA">
+                                        <rect key="frame" x="390" y="243" width="33" height="33"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Blq-Eg-eTN">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Blq-Eg-eTN">
                                 <rect key="frame" x="488" y="0.0" width="80" height="320"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -65,6 +77,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="gameSceneHolderView" destination="oDC-xW-84I" id="1qV-Ye-5hX"/>
+                        <outlet property="manaPointsCounter" destination="6D9-MN-147" id="NaH-s0-vd3"/>
                         <outlet property="progressView" destination="gkD-3v-DZQ" id="l0c-8b-9qe"/>
                         <outlet property="rightButtonsTable" destination="Blq-Eg-eTN" id="ua8-Mo-WKG"/>
                         <outlet property="timePassedLabel" destination="Uh0-NV-4bJ" id="gIN-g9-Zxt"/>
@@ -76,4 +89,7 @@
             <point key="canvasLocation" x="333" y="417"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="womens_circle_2.jpg" width="397" height="400"/>
+    </resources>
 </document>
