@@ -34,7 +34,23 @@
     // Create Deck
     // Test deck at the moment
     
-    
+//    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 50, 30, 30)];
+//    [self.view addSubview:view];
+//    [view setBackgroundColor:[UIColor redColor]];
+//    [UIView animateWithDuration:1 animations:^(void){
+//        [view setFrame:CGRectMake(200, 200, 30, 30)];
+//    } completion:^(BOOL finished){
+//        if (finished) {
+//            [UIView animateWithDuration:5 animations:^(void){
+//                [view setFrame:CGRectMake(600, 200, 30, 30)];
+//            }
+//                completion:^(BOOL finished) {
+//                    [UIView animateWithDuration:5 animations:^(void){
+//                        [view setFrame:CGRectMake(50, 50, 30, 30)];
+//                    }];
+//                }];
+//        }
+//    }];
 }
 
 - (IBAction)buttonClicked:(id)sender {
