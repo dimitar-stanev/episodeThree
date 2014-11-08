@@ -18,6 +18,18 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXO-pO-Bnf">
                                 <rect key="frame" x="0.0" y="0.0" width="488" height="40"/>
+                                <subviews>
+                                    <progressView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gkD-3v-DZQ">
+                                        <rect key="frame" x="8" y="19" width="365" height="2"/>
+                                        <color key="tintColor" red="0.62546705160000005" green="0.17523311699999999" blue="0.1446207357" alpha="1" colorSpace="calibratedRGB"/>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="120.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uh0-NV-4bJ">
+                                        <rect key="frame" x="392" y="8" width="77" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.62546705163043481" green="0.17523311703013325" blue="0.14462073569995992" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Aai-sN-H9o"/>
@@ -53,7 +65,9 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="gameSceneHolderView" destination="oDC-xW-84I" id="1qV-Ye-5hX"/>
+                        <outlet property="progressView" destination="gkD-3v-DZQ" id="l0c-8b-9qe"/>
                         <outlet property="rightButtonsTable" destination="Blq-Eg-eTN" id="ua8-Mo-WKG"/>
+                        <outlet property="timePassedLabel" destination="Uh0-NV-4bJ" id="gIN-g9-Zxt"/>
                         <outlet property="topBarView" destination="XXO-pO-Bnf" id="s2a-Z9-zdK"/>
                     </connections>
                 </viewController>

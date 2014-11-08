@@ -16,6 +16,9 @@
 @property (weak, nonatomic) IBOutlet UIView *topBarView;
 @property (weak, nonatomic) IBOutlet UITableView *rightButtonsTable;
 @property (strong, nonatomic) NSMutableArray *actionsDeck;
+@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
+@property (nonatomic) float timePassed;
+@property (weak, nonatomic) IBOutlet UILabel *timePassedLabel;
 @end
 
 @implementation ViewController
@@ -57,6 +60,18 @@
 //        }
 //    }];
     
+    NSTimer *t = [NSTimer scheduledTimerWithTimeInterval: 0.1
+                                                  target: self
+                                                selector:@selector(updateTimer)
+                                                userInfo: nil repeats:YES];
+    self.timePassed = 0;
+    
+}
+
+-(void) updateTimer {
+    self.timePassed = self.timePassed + 0.1;
+    [self.progressView setProgress:self.timePassed/120.0];
+    [self.timePassedLabel setText:[NSString stringWithFormat:@"%.1f", 120.0-self.timePassed]];
 }
 
 - (IBAction)buttonClicked:(id)sender {
