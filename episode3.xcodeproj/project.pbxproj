@@ -17,10 +17,10 @@
 		84BC0CE51A0E319300E2AEC8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BC0CE31A0E319300E2AEC8 /* LaunchScreen.xib */; };
 		84BC0CF11A0E319400E2AEC8 /* episode3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC0CF01A0E319400E2AEC8 /* episode3Tests.m */; };
 		F8524AB51A0E4673009AE620 /* GameSceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8524AB41A0E4673009AE620 /* GameSceneView.m */; };
-		F8524AB71A0E4A86009AE620 /* GameSceneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8524AB61A0E4A86009AE620 /* GameSceneView.xib */; };
 		F8524ABA1A0E4C2D009AE620 /* ProgrammerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8524AB91A0E4C2D009AE620 /* ProgrammerView.m */; };
 		F8524ABC1A0E4C50009AE620 /* ProgrammerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8524ABB1A0E4C50009AE620 /* ProgrammerView.xib */; };
 		F8524ABF1A0E4E37009AE620 /* Programmer-128.png in Resources */ = {isa = PBXBuildFile; fileRef = F8524ABE1A0E4E37009AE620 /* Programmer-128.png */; };
+		F8524AC01A0E6CA7009AE620 /* GameSceneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8524AB61A0E4A86009AE620 /* GameSceneView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -246,6 +246,7 @@
 				84B5A1341A0E65DB008B0D86 /* womens_circle_2.jpg in Resources */,
 				84BC0CE51A0E319300E2AEC8 /* LaunchScreen.xib in Resources */,
 				F8524ABC1A0E4C50009AE620 /* ProgrammerView.xib in Resources */,
+				F8524AC01A0E6CA7009AE620 /* GameSceneView.xib in Resources */,
 				84BC0CE21A0E319300E2AEC8 /* Images.xcassets in Resources */,
 				F8524ABF1A0E4E37009AE620 /* Programmer-128.png in Resources */,
 			);
