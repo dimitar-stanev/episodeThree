@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "GameSceneView.h"
+#import "Player.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *testButton;
@@ -19,13 +20,15 @@
 @property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 @property (nonatomic) float timePassed;
 @property (weak, nonatomic) IBOutlet UILabel *timePassedLabel;
+@property (strong, nonatomic) NSTimer *timer;
+@property (weak, nonatomic) IBOutlet UILabel *manaPointsCounter;
+@property (strong, nonatomic) Player *player;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
     // Do any additional setup after loading the view, typically from a nib.
     NSArray *view = [[NSBundle mainBundle] loadNibNamed:@"GameSceneView"owner:nil options:nil];
     self.gameSceneView = [view objectAtIndex:0];
@@ -36,6 +39,9 @@
     
     // Create Deck
     // Test deck at the moment
+    self.player = [[Player alloc] init];
+    self.player.manaPointsLeft = 10;
+    
     
 //    UIImageView *view = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 30, 30)];
 //    [view setImage:[UIImage imageNamed:@"Programmer-128.png"]];
@@ -60,7 +66,7 @@
 //        }
 //    }];
     
-    NSTimer *t = [NSTimer scheduledTimerWithTimeInterval: 0.1
+    self.timer = [NSTimer scheduledTimerWithTimeInterval: 0.1
                                                   target: self
                                                 selector:@selector(updateTimer)
                                                 userInfo: nil repeats:YES];
@@ -70,8 +76,16 @@
 
 -(void) updateTimer {
     self.timePassed = self.timePassed + 0.1;
+    if (self.timePassed > 180) {
+        [self.timer invalidate];
+        self.timer = nil;
+    }
+    if ( ((int)self.timePassed%5) == 0 && self.timePassed < (float)((int)self.timePassed)+0.1 && self.timePassed > 1)   {
+        self.player.manaPointsLeft++;
+        [self.manaPointsCounter setText:[NSString stringWithFormat:@"%d", self.player.manaPointsLeft]];
+    }
     [self.progressView setProgress:self.timePassed/120.0];
-    [self.timePassedLabel setText:[NSString stringWithFormat:@"%.1f", 120.0-self.timePassed]];
+    [self.timePassedLabel setText:[NSString stringWithFormat:@"%.1f", self.timePassed]];
 }
 
 - (IBAction)buttonClicked:(id)sender {

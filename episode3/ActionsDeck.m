@@ -13,7 +13,7 @@
 -(void)initializeDeck {
     
 #warning INITIALIZE THE ACTIONS HERE !!!
-    
+
     NSMutableArray *newDeck = [[NSMutableArray alloc] init];
     self.allDrawnActions = newDeck;
 }
