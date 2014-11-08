@@ -14,4 +14,7 @@
 @property (nonatomic) NSInteger effectOnHealth;
 @property (strong, nonatomic) NSString *imagePath;
 @property (nonatomic) NSInteger numberOfPeopleAffected;
+@property (nonatomic) BOOL disablesPlayer;
+@property (nonatomic) NSDecimal timeAdded;
+@property (nonatomic) int manaCost;
 @end
