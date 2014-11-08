@@ -10,48 +10,6 @@
             <rect key="frame" x="0.0" y="0.0" width="488" height="280"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUW-eJ-e18" customClass="ProgrammerView">
-                    <rect key="frame" x="143" y="67" width="70" height="70"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kik-WC-NFf" customClass="ProgrammerView">
-                    <rect key="frame" x="231" y="67" width="70" height="70"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjH-XL-5qN" customClass="ProgrammerView">
-                    <rect key="frame" x="309" y="72" width="70" height="70"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIj-Xp-zam" customClass="ProgrammerView">
-                    <rect key="frame" x="143" y="152" width="70" height="70"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAi-jH-mBP" customClass="ProgrammerView">
-                    <rect key="frame" x="243" y="152" width="70" height="70"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSC-5j-iWY" customClass="ProgrammerView">
-                    <rect key="frame" x="331" y="152" width="70" height="70"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <state key="normal">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BFc-i5-SXA">
                     <rect key="frame" x="69" y="30" width="70" height="20"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -76,9 +34,41 @@
                     <rect key="frame" x="349" y="30" width="70" height="20"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P3P-aC-zob">
+                    <rect key="frame" x="69" y="60" width="70" height="70"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wXo-rf-Evo">
+                    <rect key="frame" x="209" y="60" width="70" height="70"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a9E-fv-jYg">
+                    <rect key="frame" x="349" y="60" width="70" height="70"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xjN-IV-Bcl">
+                    <rect key="frame" x="69" y="150" width="70" height="70"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2L-bh-9qt">
+                    <rect key="frame" x="209" y="150" width="70" height="70"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xSp-Xn-OwA">
+                    <rect key="frame" x="349" y="150" width="70" height="70"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="player1View" destination="P3P-aC-zob" id="SqN-Tw-YHF"/>
+                <outlet property="player2View" destination="wXo-rf-Evo" id="G1m-zC-kKy"/>
+                <outlet property="player3View" destination="a9E-fv-jYg" id="tSw-zE-WsN"/>
+                <outlet property="player4View" destination="xjN-IV-Bcl" id="8aU-ms-gKm"/>
+                <outlet property="player5View" destination="I2L-bh-9qt" id="9L8-Ed-hyP"/>
+                <outlet property="player6View" destination="xSp-Xn-OwA" id="5Cg-1Z-Z4J"/>
+            </connections>
             <point key="canvasLocation" x="429" y="443"/>
         </view>
         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="75l-1Z-MuB">
