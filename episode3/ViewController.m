@@ -24,8 +24,10 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
     // Do any additional setup after loading the view, typically from a nib.
-    self.gameSceneView = [[[NSBundle mainBundle] loadNibNamed:@"GameSceneView"owner:nil options:nil] objectAtIndex:0];
+    NSArray *view = [[NSBundle mainBundle] loadNibNamed:@"GameSceneView"owner:nil options:nil];
+    self.gameSceneView = [view objectAtIndex:0];
     [self.gameSceneHolderView addSubview:self.gameSceneView];
+    
     self.rightButtonsTable.delegate = self;
     self.rightButtonsTable.dataSource = self;
 }

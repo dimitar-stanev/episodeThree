@@ -20,19 +20,13 @@
 }
 */
 
--(id)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
+-(void)awakeFromNib
+{
+    [super awakeFromNib];
     
-    if ( self ) {
-        
-//        [[NSBundle mainBundle] loadNibNamed:@"ProgrammerView"owner:nil options:nil];
-
-        _programmerImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Programmer-128"]];
-        [_programmerImage setFrame:CGRectMake(15, 5, 40, 40)];
-        [self addSubview:_programmerImage];
-    }
-    
-    return self;
+    _programmerImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Programmer-128"]];
+    [_programmerImage setFrame:CGRectMake(15, 5, 40, 40)];
+    [self addSubview:_programmerImage];
 }
 
 @end

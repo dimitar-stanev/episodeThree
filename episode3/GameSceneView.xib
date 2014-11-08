@@ -62,21 +62,14 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="player1View" destination="P3P-aC-zob" id="SqN-Tw-YHF"/>
-                <outlet property="player2View" destination="wXo-rf-Evo" id="G1m-zC-kKy"/>
-                <outlet property="player3View" destination="a9E-fv-jYg" id="tSw-zE-WsN"/>
-                <outlet property="player4View" destination="xjN-IV-Bcl" id="8aU-ms-gKm"/>
-                <outlet property="player5View" destination="I2L-bh-9qt" id="9L8-Ed-hyP"/>
-                <outlet property="player6View" destination="xSp-Xn-OwA" id="5Cg-1Z-Z4J"/>
+                <outlet property="programmer1View" destination="P3P-aC-zob" id="ZZA-DL-dIV"/>
+                <outlet property="programmer2View" destination="wXo-rf-Evo" id="H0R-vj-iHa"/>
+                <outlet property="programmer3View" destination="a9E-fv-jYg" id="J5d-Qb-AIZ"/>
+                <outlet property="programmer4View" destination="xjN-IV-Bcl" id="PxH-7s-0aB"/>
+                <outlet property="programmer5View" destination="I2L-bh-9qt" id="6vM-WR-IgX"/>
+                <outlet property="programmer6View" destination="xSp-Xn-OwA" id="9q4-48-1NL"/>
             </connections>
             <point key="canvasLocation" x="429" y="443"/>
         </view>
-        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="75l-1Z-MuB">
-            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <state key="normal" title="Button">
-                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-            </state>
-        </button>
     </objects>
 </document>

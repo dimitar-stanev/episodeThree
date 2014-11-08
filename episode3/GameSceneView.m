@@ -11,15 +11,15 @@
 
 @interface GameSceneView()
 
-@property (weak, nonatomic) IBOutlet UIView *player1View;
-@property (weak, nonatomic) IBOutlet UIView *player2View;
-@property (weak, nonatomic) IBOutlet UIView *player3View;
-@property (weak, nonatomic) IBOutlet UIView *player4View;
-@property (weak, nonatomic) IBOutlet UIView *player5View;
-@property (weak, nonatomic) IBOutlet UIView *player6View;
+@property (weak, nonatomic) IBOutlet UIView *programmer1View;
+@property (weak, nonatomic) IBOutlet UIView *programmer2View;
+@property (weak, nonatomic) IBOutlet UIView *programmer3View;
+@property (weak, nonatomic) IBOutlet UIView *programmer4View;
+@property (weak, nonatomic) IBOutlet UIView *programmer5View;
+@property (weak, nonatomic) IBOutlet UIView *programmer6View;
 
-@property (strong, nonatomic) NSArray *playerViews;
-@property (strong, nonatomic) NSArray *playerButtons;
+@property (strong, nonatomic) NSArray *programmerViews;
+@property (strong, nonatomic) NSArray *programmerButtons;
 
 @end
 
@@ -33,22 +33,30 @@
 }
 */
 
--(id)initWithCoder:(NSCoder *)aDecoder
+-(void)awakeFromNib
 {
-    self = [super initWithCoder:aDecoder];
-    
+    [super awakeFromNib];
     if ( self ) {
-//        self.playerViews = @[_player1View, _player2View, _player3View, _player4View, _player5View, _player6View];
-//        
-//        NSMutableArray *playerButtons = [[NSMutableArray alloc] init];
-//        for ( int i = 0; i < 6; i++ ) {
-//            
-////            ProgrammerView *programmerButton = [[[NSBundle mainBundle] loadNibNamed:@"GameSceneView"owner:nil options:nil] objectAtIndex:0];
-////            [self.gameSceneHolderView addSubview:self.gameSceneView];
-//        }
+        self.programmerViews = @[_programmer1View, _programmer2View, _programmer3View, _programmer4View, _programmer5View, _programmer6View];
+        
+                NSMutableArray *programmerButtons = [[NSMutableArray alloc] init];
+        for ( int i = 0; i < 6; i++ ) {
+            
+            ProgrammerView *programmerButton = [[[NSBundle mainBundle] loadNibNamed:@"ProgrammerView"owner:nil options:nil] objectAtIndex:0];
+            [_programmerViews[i] addSubview:programmerButton];
+            [programmerButtons addObject:programmerButton];
+        }
     }
-    
-    return self;
 }
+
+//-(id)initWithCoder:(NSCoder *)aDecoder
+//{
+//    self = [super initWithCoder:aDecoder];
+//    
+// 
+//    }
+//    
+//    return self;
+//}
 
 @end
