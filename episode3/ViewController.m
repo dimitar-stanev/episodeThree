@@ -30,8 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSArray *view = [[NSBundle mainBundle] loadNibNamed:@"GameSceneView"owner:nil options:nil];
-    self.gameSceneView = [view objectAtIndex:0];
+    self.gameSceneView = [[[NSBundle mainBundle] loadNibNamed:@"GameSceneView"owner:nil options:nil] objectAtIndex:0];
     [self.gameSceneHolderView addSubview:self.gameSceneView];
     
     self.rightButtonsTable.delegate = self;
@@ -41,9 +40,8 @@
     // Test deck at the moment
     self.player = [[Player alloc] init];
     self.player.manaPointsLeft = 10;
-    
-    
 //    UIImageView *view = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 30, 30)];
+//    [view setImage:[UIImage imageNamed:@"Programmer-128.png"]];
 //    [view setImage:[UIImage imageNamed:@"Programmer-128.png"]];
     
 //    UIImageView *view2 = [[UIView alloc] initWithFrame:CGRectMake(80, 80, 30, 30)];
