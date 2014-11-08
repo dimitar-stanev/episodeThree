@@ -20,13 +20,37 @@
 }
 */
 
--(void)awakeFromNib
+-(void)setProgrammerImage:(NSString *)programmerImage andDirection:(Direction)direction
 {
-    [super awakeFromNib];
+    CGFloat angle;
+    switch ( direction ) {
+        case DirectionUp:
+        {
+            angle = 0;
+            break;
+        }
+        case DirectionRight:
+        {
+            angle = M_PI/2;
+            break;
+        }
+        case DirectionDown:
+        {
+            angle = M_PI;
+            break;
+        }
+        case DirectionLeft:
+        {
+            angle = 3*M_PI/2;
+            break;
+        }
+    }
     
-    _programmerImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Programmer-128"]];
-    [_programmerImage setFrame:CGRectMake(15, 5, 40, 40)];
+    _programmerImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:programmerImage]];
+    [_programmerImage setFrame:CGRectMake(0, 0, 70, 70)];
+    [_programmerImage setTransform:CGAffineTransformMakeRotation(angle)];
     [self addSubview:_programmerImage];
+    
 }
 
 @end

@@ -6,8 +6,17 @@
 //  Copyright (c) 2014 Dimitar. All rights reserved.
 //
 
+typedef enum {
+    DirectionLeft,
+    DirectionRight,
+    DirectionUp,
+    DirectionDown
+} Direction;
+
 #import <UIKit/UIKit.h>
 
 @interface ProgrammerView : UIButton
+
+-(void)setProgrammerImage:(NSString *)programmerImage andDirection:(Direction)direction;
 
 @end

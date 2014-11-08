@@ -25,38 +25,23 @@
 
 @implementation GameSceneView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
-
 -(void)awakeFromNib
 {
     [super awakeFromNib];
     if ( self ) {
         self.programmerViews = @[_programmer1View, _programmer2View, _programmer3View, _programmer4View, _programmer5View, _programmer6View];
-        
+        NSArray *directions = @[@(DirectionLeft), @(DirectionUp), @(DirectionRight), @(DirectionLeft), @(DirectionDown), @(DirectionRight)];
                 NSMutableArray *programmerButtons = [[NSMutableArray alloc] init];
         for ( int i = 0; i < 6; i++ ) {
             
             ProgrammerView *programmerButton = [[[NSBundle mainBundle] loadNibNamed:@"ProgrammerView"owner:nil options:nil] objectAtIndex:0];
+            [programmerButton setProgrammerImage:@"character_fat_pink_one_140" andDirection:[directions[i] intValue]];
             [_programmerViews[i] addSubview:programmerButton];
             [programmerButtons addObject:programmerButton];
         }
+        
+        
     }
 }
-
-//-(id)initWithCoder:(NSCoder *)aDecoder
-//{
-//    self = [super initWithCoder:aDecoder];
-//    
-// 
-//    }
-//    
-//    return self;
-//}
 
 @end

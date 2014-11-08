@@ -19,8 +19,8 @@
 		F8524AB51A0E4673009AE620 /* GameSceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8524AB41A0E4673009AE620 /* GameSceneView.m */; };
 		F8524ABA1A0E4C2D009AE620 /* ProgrammerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8524AB91A0E4C2D009AE620 /* ProgrammerView.m */; };
 		F8524ABC1A0E4C50009AE620 /* ProgrammerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8524ABB1A0E4C50009AE620 /* ProgrammerView.xib */; };
-		F8524ABF1A0E4E37009AE620 /* Programmer-128.png in Resources */ = {isa = PBXBuildFile; fileRef = F8524ABE1A0E4E37009AE620 /* Programmer-128.png */; };
 		F8524AC01A0E6CA7009AE620 /* GameSceneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8524AB61A0E4A86009AE620 /* GameSceneView.xib */; };
+		F8524AC21A0E759A009AE620 /* character_fat_pink_one_140.png in Resources */ = {isa = PBXBuildFile; fileRef = F8524AC11A0E759A009AE620 /* character_fat_pink_one_140.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		F8524AB81A0E4C2D009AE620 /* ProgrammerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgrammerView.h; sourceTree = "<group>"; };
 		F8524AB91A0E4C2D009AE620 /* ProgrammerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgrammerView.m; sourceTree = "<group>"; };
 		F8524ABB1A0E4C50009AE620 /* ProgrammerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgrammerView.xib; sourceTree = "<group>"; };
-		F8524ABE1A0E4E37009AE620 /* Programmer-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Programmer-128.png"; sourceTree = "<group>"; };
+		F8524AC11A0E759A009AE620 /* character_fat_pink_one_140.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = character_fat_pink_one_140.png; path = Images/character_fat_pink_one_140.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +157,7 @@
 		F8524ABD1A0E4E1B009AE620 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				F8524ABE1A0E4E37009AE620 /* Programmer-128.png */,
+				F8524AC11A0E759A009AE620 /* character_fat_pink_one_140.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -243,13 +243,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BC0CE01A0E319300E2AEC8 /* Main.storyboard in Resources */,
-				F8524AB71A0E4A86009AE620 /* GameSceneView.xib in Resources */,
+				F8524AC21A0E759A009AE620 /* character_fat_pink_one_140.png in Resources */,
 				84B5A1341A0E65DB008B0D86 /* womens_circle_2.jpg in Resources */,
 				84BC0CE51A0E319300E2AEC8 /* LaunchScreen.xib in Resources */,
 				F8524ABC1A0E4C50009AE620 /* ProgrammerView.xib in Resources */,
 				F8524AC01A0E6CA7009AE620 /* GameSceneView.xib in Resources */,
 				84BC0CE21A0E319300E2AEC8 /* Images.xcassets in Resources */,
-				F8524ABF1A0E4E37009AE620 /* Programmer-128.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
