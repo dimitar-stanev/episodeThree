@@ -37,16 +37,16 @@
 {
     self = [super initWithCoder:aDecoder];
     
-    if ( self ) {
-        self.playerViews = @[_player1View, _player2View, _player3View, _player4View, _player5View, _player6View];
-        
-        NSMutableArray *playerButtons = [[NSMutableArray alloc] init];
-        for ( int i = 0; i < 6; i++ ) {
-            
-//            ProgrammerView *programmerButton = [[[NSBundle mainBundle] loadNibNamed:@"GameSceneView"owner:nil options:nil] objectAtIndex:0];
-//            [self.gameSceneHolderView addSubview:self.gameSceneView];
-        }
-    }
+//    if ( self ) {
+//        self.playerViews = @[_player1View, _player2View, _player3View, _player4View, _player5View, _player6View];
+//        
+//        NSMutableArray *playerButtons = [[NSMutableArray alloc] init];
+//        for ( int i = 0; i < 6; i++ ) {
+//            
+////            ProgrammerView *programmerButton = [[[NSBundle mainBundle] loadNibNamed:@"GameSceneView"owner:nil options:nil] objectAtIndex:0];
+////            [self.gameSceneHolderView addSubview:self.gameSceneView];
+//        }
+//    }
     
     return self;
 }
