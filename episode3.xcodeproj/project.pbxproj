@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		84B5A1311A0E36F3008B0D86 /* rightInterfaceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B5A1301A0E36F3008B0D86 /* rightInterfaceTableViewController.m */; };
 		84B5A1341A0E65DB008B0D86 /* womens_circle_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84B5A1331A0E65DB008B0D86 /* womens_circle_2.jpg */; };
+		84B5A1371A0E7981008B0D86 /* Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B5A1361A0E7981008B0D86 /* Action.m */; };
+		84B5A13A1A0E7C7A008B0D86 /* ActionsDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B5A1391A0E7C7A008B0D86 /* ActionsDeck.m */; };
 		84BC0CD71A0E319300E2AEC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC0CD61A0E319300E2AEC8 /* main.m */; };
 		84BC0CDA1A0E319300E2AEC8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC0CD91A0E319300E2AEC8 /* AppDelegate.m */; };
 		84BC0CDD1A0E319300E2AEC8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC0CDC1A0E319300E2AEC8 /* ViewController.m */; };
@@ -37,6 +39,10 @@
 		84B5A12F1A0E36F3008B0D86 /* rightInterfaceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rightInterfaceTableViewController.h; path = ../rightInterfaceTableViewController.h; sourceTree = "<group>"; };
 		84B5A1301A0E36F3008B0D86 /* rightInterfaceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = rightInterfaceTableViewController.m; path = ../rightInterfaceTableViewController.m; sourceTree = "<group>"; };
 		84B5A1331A0E65DB008B0D86 /* womens_circle_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = womens_circle_2.jpg; sourceTree = "<group>"; };
+		84B5A1351A0E7981008B0D86 /* Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
+		84B5A1361A0E7981008B0D86 /* Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Action.m; sourceTree = "<group>"; };
+		84B5A1381A0E7C7A008B0D86 /* ActionsDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsDeck.h; sourceTree = "<group>"; };
+		84B5A1391A0E7C7A008B0D86 /* ActionsDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsDeck.m; sourceTree = "<group>"; };
 		84BC0CD11A0E319300E2AEC8 /* episode3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = episode3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BC0CD51A0E319300E2AEC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84BC0CD61A0E319300E2AEC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -113,6 +119,10 @@
 				84BC0CD91A0E319300E2AEC8 /* AppDelegate.m */,
 				84BC0CDB1A0E319300E2AEC8 /* ViewController.h */,
 				84BC0CDC1A0E319300E2AEC8 /* ViewController.m */,
+				84B5A1351A0E7981008B0D86 /* Action.h */,
+				84B5A1361A0E7981008B0D86 /* Action.m */,
+				84B5A1381A0E7C7A008B0D86 /* ActionsDeck.h */,
+				84B5A1391A0E7C7A008B0D86 /* ActionsDeck.m */,
 				F8524AB31A0E4673009AE620 /* GameSceneView.h */,
 				F8524AB41A0E4673009AE620 /* GameSceneView.m */,
 				F8524AB61A0E4A86009AE620 /* GameSceneView.xib */,
@@ -266,8 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B5A13A1A0E7C7A008B0D86 /* ActionsDeck.m in Sources */,
 				84B5A1311A0E36F3008B0D86 /* rightInterfaceTableViewController.m in Sources */,
 				84BC0CDD1A0E319300E2AEC8 /* ViewController.m in Sources */,
+				84B5A1371A0E7981008B0D86 /* Action.m in Sources */,
 				F8524AB51A0E4673009AE620 /* GameSceneView.m in Sources */,
 				84BC0CDA1A0E319300E2AEC8 /* AppDelegate.m in Sources */,
 				F8524ABA1A0E4C2D009AE620 /* ProgrammerView.m in Sources */,
