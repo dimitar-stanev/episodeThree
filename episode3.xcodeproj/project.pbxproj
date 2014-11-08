@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		84B5A1311A0E36F3008B0D86 /* rightInterfaceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B5A1301A0E36F3008B0D86 /* rightInterfaceTableViewController.m */; };
+		84B5A1341A0E65DB008B0D86 /* womens_circle_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84B5A1331A0E65DB008B0D86 /* womens_circle_2.jpg */; };
 		84BC0CD71A0E319300E2AEC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC0CD61A0E319300E2AEC8 /* main.m */; };
 		84BC0CDA1A0E319300E2AEC8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC0CD91A0E319300E2AEC8 /* AppDelegate.m */; };
 		84BC0CDD1A0E319300E2AEC8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC0CDC1A0E319300E2AEC8 /* ViewController.m */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		84B5A12F1A0E36F3008B0D86 /* rightInterfaceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rightInterfaceTableViewController.h; path = ../rightInterfaceTableViewController.h; sourceTree = "<group>"; };
 		84B5A1301A0E36F3008B0D86 /* rightInterfaceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = rightInterfaceTableViewController.m; path = ../rightInterfaceTableViewController.m; sourceTree = "<group>"; };
+		84B5A1331A0E65DB008B0D86 /* womens_circle_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = womens_circle_2.jpg; sourceTree = "<group>"; };
 		84BC0CD11A0E319300E2AEC8 /* episode3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = episode3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BC0CD51A0E319300E2AEC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84BC0CD61A0E319300E2AEC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84B5A1321A0E65C9008B0D86 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				84B5A1331A0E65DB008B0D86 /* womens_circle_2.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		84BC0CC81A0E319300E2AEC8 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +111,7 @@
 		84BC0CD41A0E319300E2AEC8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84B5A1321A0E65C9008B0D86 /* Images */,
 				84BC0CD51A0E319300E2AEC8 /* Info.plist */,
 				84BC0CD61A0E319300E2AEC8 /* main.m */,
 			);
@@ -205,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BC0CE01A0E319300E2AEC8 /* Main.storyboard in Resources */,
+				84B5A1341A0E65DB008B0D86 /* womens_circle_2.jpg in Resources */,
 				84BC0CE51A0E319300E2AEC8 /* LaunchScreen.xib in Resources */,
 				84BC0CE21A0E319300E2AEC8 /* Images.xcassets in Resources */,
 			);
