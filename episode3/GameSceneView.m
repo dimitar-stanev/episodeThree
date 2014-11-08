@@ -36,12 +36,18 @@
             
             ProgrammerView *programmerButton = [[[NSBundle mainBundle] loadNibNamed:@"ProgrammerView"owner:nil options:nil] objectAtIndex:0];
             [programmerButton setProgrammerImage:@"character_fat_pink_one_140" andDirection:[directions[i] intValue]];
+            [programmerButton addTarget:self action:@selector(didPressProgrammerButton:) forControlEvents:UIControlEventTouchUpInside];
             [_programmerViews[i] addSubview:programmerButton];
             [programmerButtons addObject:programmerButton];
         }
         
         
     }
+}
+
+-(void)didPressProgrammerButton:(ProgrammerView*)button
+{
+    NSLog(@"tapped programmer");
 }
 
 @end

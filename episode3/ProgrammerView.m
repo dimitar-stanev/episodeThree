@@ -49,6 +49,8 @@
     _programmerImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:programmerImage]];
     [_programmerImage setFrame:CGRectMake(0, 0, 70, 70)];
     [_programmerImage setTransform:CGAffineTransformMakeRotation(angle)];
+    [_programmerImage setUserInteractionEnabled:NO];
+//    _programmerImage set
     [self addSubview:_programmerImage];
     
 }
