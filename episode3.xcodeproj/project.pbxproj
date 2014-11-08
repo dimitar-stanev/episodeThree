@@ -243,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BC0CE01A0E319300E2AEC8 /* Main.storyboard in Resources */,
+				F8524AB71A0E4A86009AE620 /* GameSceneView.xib in Resources */,
 				84B5A1341A0E65DB008B0D86 /* womens_circle_2.jpg in Resources */,
 				84BC0CE51A0E319300E2AEC8 /* LaunchScreen.xib in Resources */,
 				F8524ABC1A0E4C50009AE620 /* ProgrammerView.xib in Resources */,

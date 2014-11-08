@@ -47,15 +47,15 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return 4;
 }
 
 -(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [btn setTitle:@"ASDF" forState:UIControlStateNormal];
+//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//    [btn setTitle:@"ASDF" forState:UIControlStateNormal];
 //    [cell addSubview:btn];
-    [cell setBackgroundView:btn];
+//    [cell setBackgroundView:btn];
 //    UIImageView *image = UIImage
     UIImage *img = [UIImage imageNamed:@"womens_circle_2.jpg"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
@@ -69,6 +69,10 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"ROW SELECTED : %ld", (long)[indexPath row]);
     [tableView reloadData];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 80.0;
 }
 
 @end
