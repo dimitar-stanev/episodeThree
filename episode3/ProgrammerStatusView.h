@@ -10,4 +10,6 @@
 
 @interface ProgrammerStatusView : UIView
 
+-(void)setConcentration:(int)concentration color:(UIColor*)concentrationColor energy:(int)energy color:(UIColor*)energyColor health:(int)health color:(UIColor*)healthColor;
+
 @end

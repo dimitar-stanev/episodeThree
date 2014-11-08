@@ -26,6 +26,8 @@
 		F8524AC21A0E759A009AE620 /* character_fat_pink_one_140.png in Resources */ = {isa = PBXBuildFile; fileRef = F8524AC11A0E759A009AE620 /* character_fat_pink_one_140.png */; };
 		F8524AC51A0EC939009AE620 /* ProgrammerStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8524AC41A0EC939009AE620 /* ProgrammerStatusView.m */; };
 		F8524AC81A0EC96C009AE620 /* ProgrammerStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8524AC71A0EC96C009AE620 /* ProgrammerStatusView.xib */; };
+		F8524ACB1A0ED79E009AE620 /* Programmer.m in Sources */ = {isa = PBXBuildFile; fileRef = F8524ACA1A0ED79E009AE620 /* Programmer.m */; };
+		F8524ACE1A0ED898009AE620 /* ProgrammerState.m in Sources */ = {isa = PBXBuildFile; fileRef = F8524ACD1A0ED898009AE620 /* ProgrammerState.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,10 @@
 		F8524AC31A0EC939009AE620 /* ProgrammerStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgrammerStatusView.h; sourceTree = "<group>"; };
 		F8524AC41A0EC939009AE620 /* ProgrammerStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgrammerStatusView.m; sourceTree = "<group>"; };
 		F8524AC71A0EC96C009AE620 /* ProgrammerStatusView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgrammerStatusView.xib; sourceTree = "<group>"; };
+		F8524AC91A0ED79E009AE620 /* Programmer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Programmer.h; sourceTree = "<group>"; };
+		F8524ACA1A0ED79E009AE620 /* Programmer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Programmer.m; sourceTree = "<group>"; };
+		F8524ACC1A0ED898009AE620 /* ProgrammerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgrammerState.h; sourceTree = "<group>"; };
+		F8524ACD1A0ED898009AE620 /* ProgrammerState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgrammerState.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,15 +140,6 @@
 				84B5A1381A0E7C7A008B0D86 /* ActionsDeck.h */,
 				84B5A1391A0E7C7A008B0D86 /* ActionsDeck.m */,
 				F8524AC61A0EC944009AE620 /* GameScene */,
-				F8524AB31A0E4673009AE620 /* GameSceneView.h */,
-				F8524AB41A0E4673009AE620 /* GameSceneView.m */,
-				F8524AB61A0E4A86009AE620 /* GameSceneView.xib */,
-				F8524AB81A0E4C2D009AE620 /* ProgrammerView.h */,
-				F8524AB91A0E4C2D009AE620 /* ProgrammerView.m */,
-				F8524ABB1A0E4C50009AE620 /* ProgrammerView.xib */,
-				F8524AC31A0EC939009AE620 /* ProgrammerStatusView.h */,
-				F8524AC41A0EC939009AE620 /* ProgrammerStatusView.m */,
-				F8524AC71A0EC96C009AE620 /* ProgrammerStatusView.xib */,
 				84BC0CDE1A0E319300E2AEC8 /* Main.storyboard */,
 				84BC0CE11A0E319300E2AEC8 /* Images.xcassets */,
 				84BC0CE31A0E319300E2AEC8 /* LaunchScreen.xib */,
@@ -189,6 +186,19 @@
 		F8524AC61A0EC944009AE620 /* GameScene */ = {
 			isa = PBXGroup;
 			children = (
+				F8524AC91A0ED79E009AE620 /* Programmer.h */,
+				F8524ACA1A0ED79E009AE620 /* Programmer.m */,
+				F8524ACC1A0ED898009AE620 /* ProgrammerState.h */,
+				F8524ACD1A0ED898009AE620 /* ProgrammerState.m */,
+				F8524AB31A0E4673009AE620 /* GameSceneView.h */,
+				F8524AB41A0E4673009AE620 /* GameSceneView.m */,
+				F8524AB61A0E4A86009AE620 /* GameSceneView.xib */,
+				F8524AB81A0E4C2D009AE620 /* ProgrammerView.h */,
+				F8524AB91A0E4C2D009AE620 /* ProgrammerView.m */,
+				F8524ABB1A0E4C50009AE620 /* ProgrammerView.xib */,
+				F8524AC31A0EC939009AE620 /* ProgrammerStatusView.h */,
+				F8524AC41A0EC939009AE620 /* ProgrammerStatusView.m */,
+				F8524AC71A0EC96C009AE620 /* ProgrammerStatusView.xib */,
 			);
 			name = GameScene;
 			sourceTree = "<group>";
@@ -301,7 +311,9 @@
 				84B5A13A1A0E7C7A008B0D86 /* ActionsDeck.m in Sources */,
 				F8524AC51A0EC939009AE620 /* ProgrammerStatusView.m in Sources */,
 				84B5A1311A0E36F3008B0D86 /* rightInterfaceTableViewController.m in Sources */,
+				F8524ACB1A0ED79E009AE620 /* Programmer.m in Sources */,
 				84BC0CDD1A0E319300E2AEC8 /* ViewController.m in Sources */,
+				F8524ACE1A0ED898009AE620 /* ProgrammerState.m in Sources */,
 				84B5A1371A0E7981008B0D86 /* Action.m in Sources */,
 				F8524AB51A0E4673009AE620 /* GameSceneView.m in Sources */,
 				84BC0CDA1A0E319300E2AEC8 /* AppDelegate.m in Sources */,

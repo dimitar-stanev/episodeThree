@@ -37,8 +37,8 @@
     // Create Deck
     // Test deck at the moment
     
-    UIImageView *view = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 30, 30)];
-    [view setImage:[UIImage imageNamed:@"Programmer-128.png"]];
+//    UIImageView *view = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 30, 30)];
+//    [view setImage:[UIImage imageNamed:@"Programmer-128.png"]];
     
 //    UIImageView *view2 = [[UIView alloc] initWithFrame:CGRectMake(80, 80, 30, 30)];
     
