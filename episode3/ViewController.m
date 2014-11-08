@@ -16,6 +16,9 @@
 @property (weak, nonatomic) IBOutlet UIView *topBarView;
 @property (weak, nonatomic) IBOutlet UITableView *rightButtonsTable;
 @property (strong, nonatomic) NSMutableArray *actionsDeck;
+@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
+@property (nonatomic) float timePassed;
+@property (weak, nonatomic) IBOutlet UILabel *timePassedLabel;
 @end
 
 @implementation ViewController
@@ -34,7 +37,41 @@
     // Create Deck
     // Test deck at the moment
     
+    UIImageView *view = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 30, 30)];
+    [view setImage:[UIImage imageNamed:@"Programmer-128.png"]];
     
+//    UIImageView *view2 = [[UIView alloc] initWithFrame:CGRectMake(80, 80, 30, 30)];
+    
+//    [self.view addSubview:view];
+//    [UIView animateWithDuration:5 animations:^(void){
+//        [view setFrame:CGRectMake(200, 200, 30, 30)];
+//        [view setImage: [UIImage imageNamed:@"womens_circle_2.jpg"]];
+//    } completion:^(BOOL finished){
+//        if (finished) {
+//            [UIView animateWithDuration:5 animations:^(void){
+//                [view setFrame:CGRectMake(600, 200, 30, 30)];
+//                [view setImage:[UIImage imageNamed:@"Programmer-128.png"]];
+//            }
+//                completion:^(BOOL finished) {
+//                    [UIView animateWithDuration:5 animations:^(void){
+//                        [view setFrame:CGRectMake(50, 50, 30, 30)];
+//                    }];
+//                }];
+//        }
+//    }];
+    
+    NSTimer *t = [NSTimer scheduledTimerWithTimeInterval: 0.1
+                                                  target: self
+                                                selector:@selector(updateTimer)
+                                                userInfo: nil repeats:YES];
+    self.timePassed = 0;
+    
+}
+
+-(void) updateTimer {
+    self.timePassed = self.timePassed + 0.1;
+    [self.progressView setProgress:self.timePassed/120.0];
+    [self.timePassedLabel setText:[NSString stringWithFormat:@"%.1f", 120.0-self.timePassed]];
 }
 
 - (IBAction)buttonClicked:(id)sender {

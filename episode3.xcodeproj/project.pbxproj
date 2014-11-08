@@ -18,6 +18,7 @@
 		84BC0CE21A0E319300E2AEC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BC0CE11A0E319300E2AEC8 /* Images.xcassets */; };
 		84BC0CE51A0E319300E2AEC8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BC0CE31A0E319300E2AEC8 /* LaunchScreen.xib */; };
 		84BC0CF11A0E319400E2AEC8 /* episode3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC0CF01A0E319400E2AEC8 /* episode3Tests.m */; };
+		84E9A0061A0EC03400764E5A /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9A0051A0EC03400764E5A /* Player.m */; };
 		F8524AB51A0E4673009AE620 /* GameSceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8524AB41A0E4673009AE620 /* GameSceneView.m */; };
 		F8524ABA1A0E4C2D009AE620 /* ProgrammerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8524AB91A0E4C2D009AE620 /* ProgrammerView.m */; };
 		F8524ABC1A0E4C50009AE620 /* ProgrammerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8524ABB1A0E4C50009AE620 /* ProgrammerView.xib */; };
@@ -58,6 +59,8 @@
 		84BC0CEA1A0E319400E2AEC8 /* episode3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = episode3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BC0CEF1A0E319400E2AEC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84BC0CF01A0E319400E2AEC8 /* episode3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = episode3Tests.m; sourceTree = "<group>"; };
+		84E9A0041A0EC03400764E5A /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		84E9A0051A0EC03400764E5A /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		F8524AB31A0E4673009AE620 /* GameSceneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSceneView.h; sourceTree = "<group>"; };
 		F8524AB41A0E4673009AE620 /* GameSceneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSceneView.m; sourceTree = "<group>"; };
 		F8524AB61A0E4A86009AE620 /* GameSceneView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameSceneView.xib; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 				84BC0CD91A0E319300E2AEC8 /* AppDelegate.m */,
 				84BC0CDB1A0E319300E2AEC8 /* ViewController.h */,
 				84BC0CDC1A0E319300E2AEC8 /* ViewController.m */,
+				84E9A0041A0EC03400764E5A /* Player.h */,
+				84E9A0051A0EC03400764E5A /* Player.m */,
 				84B5A1351A0E7981008B0D86 /* Action.h */,
 				84B5A1361A0E7981008B0D86 /* Action.m */,
 				84B5A1381A0E7C7A008B0D86 /* ActionsDeck.h */,
@@ -301,6 +306,7 @@
 				F8524AB51A0E4673009AE620 /* GameSceneView.m in Sources */,
 				84BC0CDA1A0E319300E2AEC8 /* AppDelegate.m in Sources */,
 				F8524ABA1A0E4C2D009AE620 /* ProgrammerView.m in Sources */,
+				84E9A0061A0EC03400764E5A /* Player.m in Sources */,
 				84BC0CD71A0E319300E2AEC8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
