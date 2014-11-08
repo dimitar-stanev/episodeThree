@@ -9,13 +9,10 @@
         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7VI-gz-rNs" customClass="ProgrammerView">
             <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <state key="normal" image="Programmer-128.png">
+            <state key="normal">
                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
             </state>
             <point key="canvasLocation" x="353" y="312"/>
         </button>
     </objects>
-    <resources>
-        <image name="Programmer-128.png" width="128" height="128"/>
-    </resources>
 </document>

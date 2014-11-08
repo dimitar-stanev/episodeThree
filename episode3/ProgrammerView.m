@@ -8,7 +8,9 @@
 
 #import "ProgrammerView.h"
 
-@implementation ProgrammerView
+@implementation ProgrammerView {
+    UIImageView *_programmerImage;
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -17,5 +19,17 @@
     // Drawing code
 }
 */
+
+-(id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if ( self ) {
+        _programmerImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Programmer-128"]];
+        [_programmerImage setFrame:CGRectMake(15, 5, 40, 40)];
+        [self addSubview:_programmerImage];
+    }
+    
+    return self;
+}
 
 @end
