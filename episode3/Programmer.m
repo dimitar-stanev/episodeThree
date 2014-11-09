@@ -16,7 +16,7 @@
     
     if ( nil != self ) {
         self.programmerView = [[[NSBundle mainBundle] loadNibNamed:@"ProgrammerView"owner:nil options:nil] objectAtIndex:0];
-        [self.programmerView setProgrammerImage:imageName andDirection:direction];
+        [self.programmerView setProgrammerImage:imageName programmer:self andDirection:direction];
         
         self.programmerStatusView = [[[NSBundle mainBundle] loadNibNamed:@"ProgrammerStatusView"owner:nil options:nil] objectAtIndex:0];
         
@@ -27,6 +27,8 @@
         _concentrationState = [[ProgrammerState alloc] init];
         _energyState = [[ProgrammerState alloc] init];
         _healthState = [[ProgrammerState alloc] init];
+        
+        [self updateStatusView];
     }
     
     return self;
@@ -38,11 +40,11 @@
     double energy = _energyState.efficiency * _energy;
     double health = _healthState.efficiency * _health;
     
-//    UIColor *concentrationColor = (_energyState.timeLeft == 0) ? 
+    UIColor *concentrationColor = (_concentrationState.timeLeft == 0) ? [UIColor blackColor] : (_concentrationState.immune) ? [UIColor greenColor] : [UIColor redColor];
+    UIColor *energyColor = (_energyState.timeLeft == 0) ? [UIColor blackColor] : (_energyState.immune) ? [UIColor greenColor] : [UIColor redColor];
+    UIColor *healthColor = (_healthState.timeLeft == 0) ? [UIColor blackColor] : (_healthState.immune) ? [UIColor greenColor] : [UIColor redColor];
     
-    [self.programmerStatusView setConcentration:_concentration*_concentrationState.efficiency color:[UIColor blackColor] energy:_energy*_energyState.efficiency color:[UIColor blackColor] health:_health*_healthState.efficiency color:[UIColor blackColor]];
+    [self.programmerStatusView setConcentration:concentration color:concentrationColor energy:energy color:energyColor health:health color:healthColor];
 }
-
-
 
 @end

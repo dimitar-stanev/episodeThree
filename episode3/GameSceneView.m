@@ -8,6 +8,7 @@
 
 #import "GameSceneView.h"
 #import "ProgrammerView.h"
+#import "Programmer.h"
 
 @interface GameSceneView()
 
@@ -32,13 +33,17 @@
         self.programmerViews = @[_programmer1View, _programmer2View, _programmer3View, _programmer4View, _programmer5View, _programmer6View];
         NSArray *directions = @[@(DirectionLeft), @(DirectionUp), @(DirectionRight), @(DirectionLeft), @(DirectionDown), @(DirectionRight)];
                 NSMutableArray *programmerButtons = [[NSMutableArray alloc] init];
+        NSArray *images = @[@"character_fat_pink_one_140", @"character_fat_pink_one_140", @"character_fat_pink_one_140", @"character_fat_pink_one_140", @"character_fat_pink_one_140", @"character_fat_pink_one_140"];
+        
         for ( int i = 0; i < 6; i++ ) {
+            Programmer *programmer = [[Programmer alloc] initWithImage:images[i] direction:[directions[i] intValue] concentration:4 energy:4 health:4];
             
-            ProgrammerView *programmerButton = [[[NSBundle mainBundle] loadNibNamed:@"ProgrammerView"owner:nil options:nil] objectAtIndex:0];
-            [programmerButton setProgrammerImage:@"character_fat_pink_one_140" andDirection:[directions[i] intValue]];
+            ProgrammerView *programmerButton = [programmer programmerView];
             [programmerButton addTarget:self action:@selector(didPressProgrammerButton:) forControlEvents:UIControlEventTouchUpInside];
             [_programmerViews[i] addSubview:programmerButton];
             [programmerButtons addObject:programmerButton];
+            
+            
         }
         
         

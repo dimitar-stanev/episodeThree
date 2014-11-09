@@ -14,9 +14,12 @@ typedef enum {
 } Direction;
 
 #import <UIKit/UIKit.h>
+@class Programmer;
 
 @interface ProgrammerView : UIButton
 
--(void)setProgrammerImage:(NSString *)programmerImage andDirection:(Direction)direction;
+@property (strong, nonatomic) Programmer *programmer;
+
+-(void)setProgrammerImage:(NSString *)programmerImage programmer:(Programmer*)programmer andDirection:(Direction)direction;
 
 @end
