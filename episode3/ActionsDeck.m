@@ -148,9 +148,12 @@
 }
 
 -(Action*) replaceCard {
-    int cardIndex = arc4random() % (self.allDrawnActions.count);
+    int cardIndex = arc4random()%self.allDrawnActions.count;
     [self.allDrawnActions removeObjectAtIndex:cardIndex];
-    return self.allDrawnActions[cardIndex];
+    if (cardIndex < self.allDrawnActions.count) {
+        return self.allDrawnActions[cardIndex];
+    }
+    return self.allDrawnActions[0];
 }
 
 @end
