@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "GameSceneView.h"
 #import "Player.h"
+#import "ActionsDeck.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *testButton;
@@ -23,6 +24,7 @@
 @property (strong, nonatomic) NSTimer *timer;
 @property (weak, nonatomic) IBOutlet UILabel *manaPointsCounter;
 @property (strong, nonatomic) Player *player;
+@property (strong, nonatomic) ActionsDeck *drawnDeck;
 @end
 
 @implementation ViewController
@@ -78,18 +80,12 @@
         [self.timer invalidate];
         self.timer = nil;
     }
-    if ( ((int)self.timePassed%5) == 0 && self.timePassed < (float)((int)self.timePassed)+0.1 && self.timePassed > 1)   {
+    if ( ((int)self.timePassed%5) == 0 && self.timePassed < (float)((int)self.timePassed)+0.1 && self	.timePassed > 1)   {
         self.player.manaPointsLeft++;
         [self.manaPointsCounter setText:[NSString stringWithFormat:@"%d", self.player.manaPointsLeft]];
     }
     [self.progressView setProgress:self.timePassed/120.0];
     [self.timePassedLabel setText:[NSString stringWithFormat:@"%.1f", self.timePassed]];
-}
-
-- (IBAction)buttonClicked:(id)sender {
-    [UIView animateWithDuration:2 animations:^(void){
-        self.view.backgroundColor = [UIColor yellowColor];
-    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -123,6 +119,9 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"ROW SELECTED : %ld", (long)[indexPath row]);
     [tableView reloadData];
+    [UIView animateWithDuration:0.7 animations:^(void){
+        [[tableView cellForRowAtIndexPath:indexPath].backgroundView setAlpha:0.5];
+    }];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
