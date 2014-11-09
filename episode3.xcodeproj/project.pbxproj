@@ -33,6 +33,17 @@
 		F8419AB91A0F533500732CD9 /* character_skinny_two_2.png in Resources */ = {isa = PBXBuildFile; fileRef = F8419AB31A0F533500732CD9 /* character_skinny_two_2.png */; };
 		F8419ABA1A0F533500732CD9 /* character_skinny_two_3.png in Resources */ = {isa = PBXBuildFile; fileRef = F8419AB41A0F533500732CD9 /* character_skinny_two_3.png */; };
 		F8419ABB1A0F533500732CD9 /* character_skinny_two_4.png in Resources */ = {isa = PBXBuildFile; fileRef = F8419AB51A0F533500732CD9 /* character_skinny_two_4.png */; };
+		F8419AC71A0F57B400732CD9 /* backToWork5Mana.png in Resources */ = {isa = PBXBuildFile; fileRef = F8419ABC1A0F57B400732CD9 /* backToWork5Mana.png */; };
+		F8419AC81A0F57B400732CD9 /* coffe1Mana.png in Resources */ = {isa = PBXBuildFile; fileRef = F8419ABD1A0F57B400732CD9 /* coffe1Mana.png */; };
+		F8419AC91A0F57B400732CD9 /* girlfriend2Mana.png in Resources */ = {isa = PBXBuildFile; fileRef = F8419ABE1A0F57B400732CD9 /* girlfriend2Mana.png */; };
+		F8419ACA1A0F57B400732CD9 /* Health1mana.png in Resources */ = {isa = PBXBuildFile; fileRef = F8419ABF1A0F57B400732CD9 /* Health1mana.png */; };
+		F8419ACB1A0F57B400732CD9 /* Health2Mana.png in Resources */ = {isa = PBXBuildFile; fileRef = F8419AC01A0F57B400732CD9 /* Health2Mana.png */; };
+		F8419ACC1A0F57B400732CD9 /* Health4mana.png in Resources */ = {isa = PBXBuildFile; fileRef = F8419AC11A0F57B400732CD9 /* Health4mana.png */; };
+		F8419ACD1A0F57B400732CD9 /* heat4Mana.png in Resources */ = {isa = PBXBuildFile; fileRef = F8419AC21A0F57B400732CD9 /* heat4Mana.png */; };
+		F8419ACE1A0F57B400732CD9 /* shit3Mana.png in Resources */ = {isa = PBXBuildFile; fileRef = F8419AC31A0F57B400732CD9 /* shit3Mana.png */; };
+		F8419ACF1A0F57B400732CD9 /* sleepy2Mana.png in Resources */ = {isa = PBXBuildFile; fileRef = F8419AC41A0F57B400732CD9 /* sleepy2Mana.png */; };
+		F8419AD01A0F57B400732CD9 /* UnderConstruction4Mana.png in Resources */ = {isa = PBXBuildFile; fileRef = F8419AC51A0F57B400732CD9 /* UnderConstruction4Mana.png */; };
+		F8419AD11A0F57B400732CD9 /* virus1Mana.png in Resources */ = {isa = PBXBuildFile; fileRef = F8419AC61A0F57B400732CD9 /* virus1Mana.png */; };
 		F8524AB51A0E4673009AE620 /* GameSceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8524AB41A0E4673009AE620 /* GameSceneView.m */; };
 		F8524ABA1A0E4C2D009AE620 /* ProgrammerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8524AB91A0E4C2D009AE620 /* ProgrammerView.m */; };
 		F8524ABC1A0E4C50009AE620 /* ProgrammerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8524ABB1A0E4C50009AE620 /* ProgrammerView.xib */; };
@@ -91,6 +102,17 @@
 		F8419AB31A0F533500732CD9 /* character_skinny_two_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character_skinny_two_2.png; sourceTree = "<group>"; };
 		F8419AB41A0F533500732CD9 /* character_skinny_two_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character_skinny_two_3.png; sourceTree = "<group>"; };
 		F8419AB51A0F533500732CD9 /* character_skinny_two_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character_skinny_two_4.png; sourceTree = "<group>"; };
+		F8419ABC1A0F57B400732CD9 /* backToWork5Mana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backToWork5Mana.png; sourceTree = "<group>"; };
+		F8419ABD1A0F57B400732CD9 /* coffe1Mana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffe1Mana.png; sourceTree = "<group>"; };
+		F8419ABE1A0F57B400732CD9 /* girlfriend2Mana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girlfriend2Mana.png; sourceTree = "<group>"; };
+		F8419ABF1A0F57B400732CD9 /* Health1mana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Health1mana.png; sourceTree = "<group>"; };
+		F8419AC01A0F57B400732CD9 /* Health2Mana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Health2Mana.png; sourceTree = "<group>"; };
+		F8419AC11A0F57B400732CD9 /* Health4mana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Health4mana.png; sourceTree = "<group>"; };
+		F8419AC21A0F57B400732CD9 /* heat4Mana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heat4Mana.png; sourceTree = "<group>"; };
+		F8419AC31A0F57B400732CD9 /* shit3Mana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shit3Mana.png; sourceTree = "<group>"; };
+		F8419AC41A0F57B400732CD9 /* sleepy2Mana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sleepy2Mana.png; sourceTree = "<group>"; };
+		F8419AC51A0F57B400732CD9 /* UnderConstruction4Mana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UnderConstruction4Mana.png; sourceTree = "<group>"; };
+		F8419AC61A0F57B400732CD9 /* virus1Mana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = virus1Mana.png; sourceTree = "<group>"; };
 		F8524AB31A0E4673009AE620 /* GameSceneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSceneView.h; sourceTree = "<group>"; };
 		F8524AB41A0E4673009AE620 /* GameSceneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSceneView.m; sourceTree = "<group>"; };
 		F8524AB61A0E4A86009AE620 /* GameSceneView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameSceneView.xib; sourceTree = "<group>"; };
@@ -136,6 +158,17 @@
 				84B5A1331A0E65DB008B0D86 /* womens_circle_2.jpg */,
 				849BB99A1A0F2AE700E23750 /* actionIcon_disease.jpg */,
 				84E9A0071A0EE56B00764E5A /* womens_circle_2.png */,
+				F8419ABC1A0F57B400732CD9 /* backToWork5Mana.png */,
+				F8419ABD1A0F57B400732CD9 /* coffe1Mana.png */,
+				F8419ABE1A0F57B400732CD9 /* girlfriend2Mana.png */,
+				F8419ABF1A0F57B400732CD9 /* Health1mana.png */,
+				F8419AC01A0F57B400732CD9 /* Health2Mana.png */,
+				F8419AC11A0F57B400732CD9 /* Health4mana.png */,
+				F8419AC21A0F57B400732CD9 /* heat4Mana.png */,
+				F8419AC31A0F57B400732CD9 /* shit3Mana.png */,
+				F8419AC41A0F57B400732CD9 /* sleepy2Mana.png */,
+				F8419AC51A0F57B400732CD9 /* UnderConstruction4Mana.png */,
+				F8419AC61A0F57B400732CD9 /* virus1Mana.png */,
 				F8419AA41A0F1A0000732CD9 /* background.jpg */,
 				F8524AC11A0E759A009AE620 /* character_fat_pink_one_140.png */,
 				F8419AB01A0F533500732CD9 /* character_fat_two_1.png */,
@@ -319,14 +352,19 @@
 			files = (
 				F8419AA91A0F411100732CD9 /* distraction.png in Resources */,
 				84BC0CE01A0E319300E2AEC8 /* Main.storyboard in Resources */,
+				F8419ACA1A0F57B400732CD9 /* Health1mana.png in Resources */,
 				F8419AA51A0F1A0000732CD9 /* background.jpg in Resources */,
 				F8524AC21A0E759A009AE620 /* character_fat_pink_one_140.png in Resources */,
 				F8419AAF1A0F456B00732CD9 /* player_status.png in Resources */,
+				F8419AC91A0F57B400732CD9 /* girlfriend2Mana.png in Resources */,
+				F8419AD01A0F57B400732CD9 /* UnderConstruction4Mana.png in Resources */,
 				84B5A1341A0E65DB008B0D86 /* womens_circle_2.jpg in Resources */,
 				F8419AB61A0F533500732CD9 /* character_fat_two_1.png in Resources */,
+				F8419AC71A0F57B400732CD9 /* backToWork5Mana.png in Resources */,
 				84E9A0081A0EE56B00764E5A /* womens_circle_2.png in Resources */,
 				84BC0CE51A0E319300E2AEC8 /* LaunchScreen.xib in Resources */,
 				F8419AAC1A0F413200732CD9 /* energy.png in Resources */,
+				F8419ACC1A0F57B400732CD9 /* Health4mana.png in Resources */,
 				F8524AC81A0EC96C009AE620 /* ProgrammerStatusView.xib in Resources */,
 				F8419AB91A0F533500732CD9 /* character_skinny_two_2.png in Resources */,
 				F8524ABC1A0E4C50009AE620 /* ProgrammerView.xib in Resources */,
@@ -334,10 +372,16 @@
 				84BC0CE21A0E319300E2AEC8 /* Images.xcassets in Resources */,
 				849BB99B1A0F2AE700E23750 /* actionIcon_disease.jpg in Resources */,
 				F8419AB81A0F533500732CD9 /* character_skinny_two_1.png in Resources */,
+				F8419ACB1A0F57B400732CD9 /* Health2Mana.png in Resources */,
+				F8419AC81A0F57B400732CD9 /* coffe1Mana.png in Resources */,
 				F8419AB71A0F533500732CD9 /* character_fat_two_2.png in Resources */,
+				F8419ACE1A0F57B400732CD9 /* shit3Mana.png in Resources */,
+				F8419ACF1A0F57B400732CD9 /* sleepy2Mana.png in Resources */,
 				F8419AAD1A0F413200732CD9 /* health.png in Resources */,
 				F8419AA71A0F3E9100732CD9 /* game_status.jpg in Resources */,
 				F8419ABA1A0F533500732CD9 /* character_skinny_two_3.png in Resources */,
+				F8419ACD1A0F57B400732CD9 /* heat4Mana.png in Resources */,
+				F8419AD11A0F57B400732CD9 /* virus1Mana.png in Resources */,
 				F8419ABB1A0F533500732CD9 /* character_skinny_two_4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
