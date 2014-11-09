@@ -25,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *manaPointsCounter;
 @property (strong, nonatomic) Player *player;
 @property (strong, nonatomic) ActionsDeck *drawnDeck;
+@property (nonatomic) int indexOfActionSelected;
 @property (nonatomic) BOOL isActionSelected;
 @property (strong, nonatomic) Action *currentChosenAction;
 
@@ -167,14 +168,17 @@
         _gameSceneView.currentChosenAction = nil;
     }
     else {
-        self.isActionSelected = YES;
-        _gameSceneView.isActionSelected = YES;
-        [UIView animateWithDuration:0.7 animations:^(void){
-            [[tableView cellForRowAtIndexPath:indexPath].backgroundView setAlpha:0.5];
-        }];
-        self.currentChosenAction = self.player.currentActions[[indexPath row]];
-        _gameSceneView.currentChosenAction = self.player.currentActions[[indexPath row]];
-        NSLog(@"%f", self.currentChosenAction.effectOnConcentration);
+        if ( [self.player.currentActions[[indexPath row]] manaCost] < self.player.manaPointsLeft) {
+            self.isActionSelected = YES;
+            _gameSceneView.isActionSelected = YES;
+            [UIView animateWithDuration:0.7 animations:^(void){
+                [[tableView cellForRowAtIndexPath:indexPath].backgroundView setAlpha:0.5];
+            }];
+            self.currentChosenAction = self.player.currentActions[[indexPath row]];
+            self.indexOfActionSelected = (int)[indexPath row];
+            _gameSceneView.currentChosenAction = self.player.currentActions[[indexPath row]];
+            NSLog(@"%f", self.currentChosenAction.effectOnConcentration);
+        }
     }
 
 }
@@ -185,8 +189,10 @@
 
 -(void)playedCardSuccessful:(BOOL)successful {
     if (successful == YES) {
-        NSUInteger index = [self.player.currentActions indexOfObject:self.currentChosenAction];
-        self.player.currentActions[index] =  [self.drawnDeck replaceCard];
+        self.player.manaPointsLeft = self.player.manaPointsLeft - self.currentChosenAction.manaCost;
+        [self.manaPointsCounter setText:[NSString stringWithFormat:@"%d", self.player.manaPointsLeft]];
+//        NSUInteger index = [self.player.currentActions indexOfObject:self.currentChosenAction];
+        self.player.currentActions[self.indexOfActionSelected] =  [self.drawnDeck replaceCard];
         [self.rightButtonsTable reloadData];
         self.isActionSelected = NO;
         self.currentChosenAction = nil;
