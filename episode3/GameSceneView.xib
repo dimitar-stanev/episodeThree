@@ -11,39 +11,39 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BFc-i5-SXA">
-                    <rect key="frame" x="19" y="20" width="100" height="30"/>
+                    <rect key="frame" x="59" y="22" width="100" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dhf-IB-zdU">
+                    <rect key="frame" x="194" y="22" width="100" height="30"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KrL-X8-MSH">
-                    <rect key="frame" x="69" y="230" width="70" height="30"/>
+                    <rect key="frame" x="59" y="230" width="100" height="30"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vun-G0-t1g">
-                    <rect key="frame" x="209" y="230" width="70" height="30"/>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oty-NB-OsE">
-                    <rect key="frame" x="349" y="230" width="70" height="30"/>
+                    <rect key="frame" x="194" y="230" width="100" height="30"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oRw-7I-TmK">
-                    <rect key="frame" x="349" y="20" width="70" height="30"/>
+                    <rect key="frame" x="334" y="22" width="100" height="30"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P3P-aC-zob">
-                    <rect key="frame" x="133" y="60" width="70" height="70"/>
+                    <rect key="frame" x="74" y="150" width="70" height="70"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wXo-rf-Evo">
-                    <rect key="frame" x="227" y="60" width="70" height="70"/>
+                    <rect key="frame" x="209" y="60" width="70" height="70"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a9E-fv-jYg">
-                    <rect key="frame" x="318" y="60" width="70" height="70"/>
+                    <rect key="frame" x="349" y="60" width="70" height="70"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xjN-IV-Bcl">
-                    <rect key="frame" x="34" y="60" width="70" height="70"/>
+                    <rect key="frame" x="74" y="60" width="70" height="70"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2L-bh-9qt">
@@ -54,19 +54,25 @@
                     <rect key="frame" x="349" y="150" width="70" height="70"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dhf-IB-zdU">
-                    <rect key="frame" x="227" y="20" width="70" height="30"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oty-NB-OsE">
+                    <rect key="frame" x="334" y="230" width="100" height="30"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="programmer1View" destination="P3P-aC-zob" id="ZZA-DL-dIV"/>
+                <outlet property="programmer1Status" destination="BFc-i5-SXA" id="obZ-W3-3Uh"/>
+                <outlet property="programmer1View" destination="xjN-IV-Bcl" id="Q0x-Bc-68u"/>
+                <outlet property="programmer2Status" destination="dhf-IB-zdU" id="H3R-rT-FnP"/>
                 <outlet property="programmer2View" destination="wXo-rf-Evo" id="H0R-vj-iHa"/>
+                <outlet property="programmer3Status" destination="oRw-7I-TmK" id="NDD-0J-iaU"/>
                 <outlet property="programmer3View" destination="a9E-fv-jYg" id="J5d-Qb-AIZ"/>
-                <outlet property="programmer4View" destination="xjN-IV-Bcl" id="PxH-7s-0aB"/>
+                <outlet property="programmer4Status" destination="KrL-X8-MSH" id="55b-PZ-a21"/>
+                <outlet property="programmer4View" destination="P3P-aC-zob" id="pOD-oL-fkD"/>
+                <outlet property="programmer5Status" destination="Vun-G0-t1g" id="oEc-EP-CqT"/>
                 <outlet property="programmer5View" destination="I2L-bh-9qt" id="6vM-WR-IgX"/>
+                <outlet property="programmer6Status" destination="oty-NB-OsE" id="5AC-Hd-PDQ"/>
                 <outlet property="programmer6View" destination="xSp-Xn-OwA" id="9q4-48-1NL"/>
             </connections>
             <point key="canvasLocation" x="429" y="443"/>

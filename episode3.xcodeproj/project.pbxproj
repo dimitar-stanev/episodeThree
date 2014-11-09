@@ -104,6 +104,7 @@
 			children = (
 				84B5A1331A0E65DB008B0D86 /* womens_circle_2.jpg */,
 				84E9A0071A0EE56B00764E5A /* womens_circle_2.png */,
+				F8524AC11A0E759A009AE620 /* character_fat_pink_one_140.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -129,7 +130,6 @@
 		84BC0CD31A0E319300E2AEC8 /* episode3 */ = {
 			isa = PBXGroup;
 			children = (
-				F8524ABD1A0E4E1B009AE620 /* Images */,
 				84B5A12F1A0E36F3008B0D86 /* rightInterfaceTableViewController.h */,
 				84B5A1301A0E36F3008B0D86 /* rightInterfaceTableViewController.m */,
 				84BC0CD81A0E319300E2AEC8 /* AppDelegate.h */,
@@ -176,14 +176,6 @@
 				84BC0CEF1A0E319400E2AEC8 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F8524ABD1A0E4E1B009AE620 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				F8524AC11A0E759A009AE620 /* character_fat_pink_one_140.png */,
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 		F8524AC61A0EC944009AE620 /* GameScene */ = {
