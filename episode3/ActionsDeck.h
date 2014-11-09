@@ -14,7 +14,7 @@
 @property (strong, nonatomic) NSMutableArray *allDrawnActions;
 
 -(void) initializeDeck;
--(NSArray*) drawCards;
+-(NSMutableArray*) drawCards;
 -(Action*) replaceCard;
 
 @end

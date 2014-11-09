@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface Action : NSObject
-@property (nonatomic) NSInteger effectOnEnergy;
-@property (nonatomic) NSInteger effectOnConcentration;
-@property (nonatomic) NSInteger effectOnHealth;
+@property (nonatomic) double effectOnEnergy;
+@property (nonatomic) double effectOnConcentration;
+@property (nonatomic) double effectOnHealth;
 @property (strong, nonatomic) NSString *imagePath;
 @property (nonatomic) NSInteger numberOfPeopleAffected;
 @property (nonatomic) BOOL disablesPlayer;
-@property (nonatomic) NSDecimal timeAdded;
 @property (nonatomic) int manaCost;
+@property (nonatomic) int addWork;
 @end

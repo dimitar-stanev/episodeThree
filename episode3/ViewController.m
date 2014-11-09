@@ -25,6 +25,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *manaPointsCounter;
 @property (strong, nonatomic) Player *player;
 @property (strong, nonatomic) ActionsDeck *drawnDeck;
+@property (nonatomic) BOOL isActionSelected;
+@property (strong, nonatomic) Action *currentChosenAction;
 @end
 
 @implementation ViewController
@@ -42,6 +44,13 @@
     // Test deck at the moment
     self.player = [[Player alloc] init];
     self.player.manaPointsLeft = 10;
+    self.player.currentActions = [[NSMutableArray alloc] init];
+    
+    self.drawnDeck = [[ActionsDeck alloc] init];
+    [self.drawnDeck initializeDeck];
+    self.player.currentActions = [self.drawnDeck drawCards];
+    
+    
 //    UIImageView *view = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, 30, 30)];
 //    [view setImage:[UIImage imageNamed:@"Programmer-128.png"]];
 //    [view setImage:[UIImage imageNamed:@"Programmer-128.png"]];
@@ -102,26 +111,41 @@
 
 -(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
-//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//    [btn setTitle:@"ASDF" forState:UIControlStateNormal];
-//    [cell addSubview:btn];
-//    [cell setBackgroundView:btn];
-//    UIImageView *image = UIImage
+    
+    switch([indexPath row]) {
+        case 0: break;
+        case 1: break;
+        case 2: break;
+        case 3: break;
+    }
     UIImage *img = [UIImage imageNamed:@"womens_circle_2.jpg"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
     [cell setBackgroundView:imageView];
-//    [cell setBackgroundColor:[UIColor redColor]];
-//    [cell setMaskView:btn];
-//    [cell.textLabel setText:@"ASDF"];
      return cell;
  }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"ROW SELECTED : %ld", (long)[indexPath row]);
+    NSLog(@"CURRENT SELECTED CARD IS : %@", self.player.currentActions[[indexPath row]]);
+    
     [tableView reloadData];
-    [UIView animateWithDuration:0.7 animations:^(void){
-        [[tableView cellForRowAtIndexPath:indexPath].backgroundView setAlpha:0.5];
-    }];
+
+    if(self.isActionSelected) {
+        self.isActionSelected = NO;
+        [UIView animateWithDuration:1 animations:^(void){
+            [[tableView cellForRowAtIndexPath:indexPath].backgroundView setAlpha:1];
+        }];
+        self.currentChosenAction = nil;
+    }
+    else {
+        self.isActionSelected = YES;
+        [UIView animateWithDuration:0.7 animations:^(void){
+            [[tableView cellForRowAtIndexPath:indexPath].backgroundView setAlpha:0.5];
+        }];
+        self.currentChosenAction = self.player.currentActions[[indexPath row]];
+        NSLog(@"%f", self.currentChosenAction.effectOnConcentration);
+    }
+
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
