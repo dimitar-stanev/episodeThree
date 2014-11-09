@@ -11,28 +11,28 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="womens_circle_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="p5x-Pf-HTH">
-                    <rect key="frame" x="0.0" y="5" width="20" height="20"/>
+                    <rect key="frame" x="0.0" y="10" width="10" height="10"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5r-II-sKx">
-                    <rect key="frame" x="22" y="5" width="10" height="20"/>
+                    <rect key="frame" x="12" y="5" width="20" height="20"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="womens_circle_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="9j0-Uf-egD">
-                    <rect key="frame" x="35" y="5" width="20" height="20"/>
+                    <rect key="frame" x="35" y="10" width="10" height="10"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrP-S7-zqq">
-                    <rect key="frame" x="57" y="5" width="10" height="20"/>
+                    <rect key="frame" x="47" y="5" width="20" height="20"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="womens_circle_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="v0S-wD-Qcz">
-                    <rect key="frame" x="70" y="5" width="20" height="20"/>
+                    <rect key="frame" x="70" y="10" width="10" height="10"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAb-yK-4Q5">
-                    <rect key="frame" x="92" y="5" width="10" height="20"/>
+                    <rect key="frame" x="82" y="5" width="20" height="20"/>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
