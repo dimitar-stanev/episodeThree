@@ -123,24 +123,25 @@
 -(void)addObject:(id)object toArray:(NSMutableArray*) array count:(int) count
 {
     for (int i = 0; i < count; i++) {
-        [array addObject:[object copy]];
+        [array addObject:object];
         
     }
 }
 
--(NSArray *)drawCards {
+-(NSMutableArray*)drawCards {
     
     int firstCard = arc4random() % (self.allDrawnActions.count+1);
     int secondCard = arc4random() % (self.allDrawnActions.count+1);
     int thirdCard = arc4random() % (self.allDrawnActions.count+1);
     int fourthCard = arc4random() % (self.allDrawnActions.count+1);
     
+    NSMutableArray *arrayToReturn = [[NSMutableArray alloc] initWithObjects: self.allDrawnActions[firstCard], self.allDrawnActions[secondCard], self.allDrawnActions[thirdCard], self.allDrawnActions[fourthCard], nil ];
+
     [self.allDrawnActions removeObjectAtIndex:firstCard];
     [self.allDrawnActions removeObjectAtIndex:secondCard];
     [self.allDrawnActions removeObjectAtIndex:thirdCard];
     [self.allDrawnActions removeObjectAtIndex:fourthCard];
     
-    NSArray *arrayToReturn = [[NSArray alloc] initWithObjects: self.allDrawnActions[firstCard], self.allDrawnActions[secondCard], self.allDrawnActions[thirdCard], self.allDrawnActions[fourthCard], nil ];
     
     return arrayToReturn;
 }
