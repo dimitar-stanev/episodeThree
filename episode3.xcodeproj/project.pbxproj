@@ -21,6 +21,7 @@
 		84BC0CF11A0E319400E2AEC8 /* episode3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC0CF01A0E319400E2AEC8 /* episode3Tests.m */; };
 		84E9A0061A0EC03400764E5A /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9A0051A0EC03400764E5A /* Player.m */; };
 		84E9A0081A0EE56B00764E5A /* womens_circle_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E9A0071A0EE56B00764E5A /* womens_circle_2.png */; };
+		F8419AA51A0F1A0000732CD9 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8419AA41A0F1A0000732CD9 /* background.jpg */; };
 		F8524AB51A0E4673009AE620 /* GameSceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8524AB41A0E4673009AE620 /* GameSceneView.m */; };
 		F8524ABA1A0E4C2D009AE620 /* ProgrammerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8524AB91A0E4C2D009AE620 /* ProgrammerView.m */; };
 		F8524ABC1A0E4C50009AE620 /* ProgrammerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8524ABB1A0E4C50009AE620 /* ProgrammerView.xib */; };
@@ -67,6 +68,7 @@
 		84E9A0041A0EC03400764E5A /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		84E9A0051A0EC03400764E5A /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		84E9A0071A0EE56B00764E5A /* womens_circle_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = womens_circle_2.png; sourceTree = "<group>"; };
+		F8419AA41A0F1A0000732CD9 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = Images/background.jpg; sourceTree = "<group>"; };
 		F8524AB31A0E4673009AE620 /* GameSceneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSceneView.h; sourceTree = "<group>"; };
 		F8524AB41A0E4673009AE620 /* GameSceneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSceneView.m; sourceTree = "<group>"; };
 		F8524AB61A0E4A86009AE620 /* GameSceneView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameSceneView.xib; sourceTree = "<group>"; };
@@ -107,6 +109,8 @@
 				84B5A1331A0E65DB008B0D86 /* womens_circle_2.jpg */,
 				849BB99A1A0F2AE700E23750 /* actionIcon_disease.jpg */,
 				84E9A0071A0EE56B00764E5A /* womens_circle_2.png */,
+				F8419AA41A0F1A0000732CD9 /* background.jpg */,
+				F8524AC11A0E759A009AE620 /* character_fat_pink_one_140.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -132,7 +136,6 @@
 		84BC0CD31A0E319300E2AEC8 /* episode3 */ = {
 			isa = PBXGroup;
 			children = (
-				F8524ABD1A0E4E1B009AE620 /* Images */,
 				84B5A12F1A0E36F3008B0D86 /* rightInterfaceTableViewController.h */,
 				84B5A1301A0E36F3008B0D86 /* rightInterfaceTableViewController.m */,
 				84BC0CD81A0E319300E2AEC8 /* AppDelegate.h */,
@@ -179,14 +182,6 @@
 				84BC0CEF1A0E319400E2AEC8 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F8524ABD1A0E4E1B009AE620 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				F8524AC11A0E759A009AE620 /* character_fat_pink_one_140.png */,
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 		F8524AC61A0EC944009AE620 /* GameScene */ = {
@@ -290,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BC0CE01A0E319300E2AEC8 /* Main.storyboard in Resources */,
+				F8419AA51A0F1A0000732CD9 /* background.jpg in Resources */,
 				F8524AC21A0E759A009AE620 /* character_fat_pink_one_140.png in Resources */,
 				84B5A1341A0E65DB008B0D86 /* womens_circle_2.jpg in Resources */,
 				84E9A0081A0EE56B00764E5A /* womens_circle_2.png in Resources */,

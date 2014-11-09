@@ -20,8 +20,10 @@
 }
 */
 
--(void)setProgrammerImage:(NSString *)programmerImage andDirection:(Direction)direction
+-(void)setProgrammerImage:(NSString *)programmerImage programmer:(Programmer*)programmer andDirection:(Direction)direction
 {
+    self.programmer = programmer;
+    
     CGFloat angle;
     switch ( direction ) {
         case DirectionUp:

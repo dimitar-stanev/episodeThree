@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "ProgrammerState.h"
 #import "ProgrammerView.h"
-#import "ProgrammerStatusView.h"
+#import "ProgrammerStatusView.h"
+#import "Action.h"
 
 @interface Programmer : NSObject
 
@@ -23,5 +24,7 @@
 @property (strong, nonatomic) ProgrammerStatusView *programmerStatusView;
 
 -(instancetype)initWithImage:(NSString*)imageName direction:(Direction)direction concentration:(int)concentration energy:(int)energy health:(int)health;
+-(BOOL)canBeAffectedByAction:(Action *)action;
+-(void)affectedByAction:(Action *)action;
 
 @end
