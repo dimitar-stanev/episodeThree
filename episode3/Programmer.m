@@ -16,6 +16,9 @@
     self = [super init];
     
     if ( nil != self ) {
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(update) name:@"timerTicked" object:nil];
+        
         self.programmerView = [[[NSBundle mainBundle] loadNibNamed:@"ProgrammerView"owner:nil options:nil] objectAtIndex:0];
         [self.programmerView setProgrammerImage:imageName programmer:self andDirection:direction];
         

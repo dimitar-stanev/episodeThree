@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
+-(void)playedCardSuccessful:(BOOL)successful;
 
 @end
 

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class Action;
+@class ViewController;
 @interface GameSceneView : UIView
+
+@property (nonatomic) BOOL isActionSelected;
+@property (strong, nonatomic) Action *currentChosenAction;
+@property (strong, nonatomic) ViewController *vc;
 
 @end

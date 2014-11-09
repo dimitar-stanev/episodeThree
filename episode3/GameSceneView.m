@@ -10,6 +10,8 @@
 #import "ProgrammerView.h"
 #import "Programmer.h"
 #import "ProgrammerStatusView.h"
+#import "Action.h"
+#import "ViewController.h"
 
 @interface GameSceneView()
 
@@ -31,6 +33,8 @@
 @property (strong, nonatomic) NSArray *programmerButtons;
 @property (strong, nonatomic) NSArray *programmerStatuses;
 @property (strong, nonatomic) NSArray *programmerStatusViews;
+@property (strong, nonatomic) NSArray *programmers;
+
 
 @end
 
@@ -39,10 +43,10 @@
 -(void)awakeFromNib
 {
     [super awakeFromNib];
-    if ( self ) {
+    if ( self ) {        
         self.programmerViews = @[_programmer1View, _programmer2View, _programmer3View, _programmer4View, _programmer5View, _programmer6View];
         self.programmerStatuses = @[_programmer1Status, _programmer2Status, _programmer3Status, _programmer4Status, _programmer5Status, _programmer6Status];
-        NSArray *directions = @[@(DirectionLeft), @(DirectionUp), @(DirectionRight), @(DirectionLeft), @(DirectionDown), @(DirectionRight)];
+        NSArray *directions = @[@(DirectionUp), @(DirectionUp), @(DirectionUp), @(DirectionDown), @(DirectionDown), @(DirectionDown)];
         NSArray *images = @[@"character_fat_pink_one_140", @"character_fat_pink_one_140", @"character_fat_pink_one_140", @"character_fat_pink_one_140", @"character_fat_pink_one_140", @"character_fat_pink_one_140"];
         NSArray *concentration = @[@6, @2, @2, @4, @4, @2];
         NSArray *energy = @[@2, @6, @2, @4, @2, @4];
@@ -50,6 +54,7 @@
         
         NSMutableArray *programmerButtons = [[NSMutableArray alloc] init];
         NSMutableArray *programmerStatusViews = [[NSMutableArray alloc] init];
+        NSMutableArray *programmers = [[NSMutableArray alloc] init];
         
         for ( int i = 0; i < 6; i++ ) {
             Programmer *programmer = [[Programmer alloc] initWithImage:images[i] direction:[directions[i] intValue] concentration:[concentration[i] intValue] energy:[energy[i] intValue] health:[health[i] intValue]];
@@ -63,17 +68,35 @@
             [_programmerStatuses[i] addSubview:statusView];
             [programmerStatusViews addObject:statusView];
             
+            [programmers addObject:programmer];
+            
         }
         
         _programmerButtons = [programmerButtons copy];
         _programmerStatusViews = [programmerStatusViews copy];
-        
+        _programmers = [programmers copy];
     }
 }
 
 -(void)didPressProgrammerButton:(ProgrammerView*)button
 {
     NSLog(@"tapped programmer");
+    if ( _isActionSelected ) {
+        BOOL successful = NO;
+        if ( 1 != [_currentChosenAction numberOfPeopleAffected] ) {
+            for ( Programmer *programmer in _programmers ) {
+                if ( [programmer canBeAffectedByAction:_currentChosenAction] ) {
+                    [programmer affectedByAction:_currentChosenAction];
+                    successful = YES;
+                }
+            }
+        }
+        else if ( [button.programmer canBeAffectedByAction:_currentChosenAction] ) {
+            [button.programmer affectedByAction:_currentChosenAction];
+            successful = YES;
+        }
+        [_vc playedCardSuccessful:successful];
+    }
 }
 
 @end

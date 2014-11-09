@@ -89,9 +89,13 @@
         [self.timer invalidate];
         self.timer = nil;
     }
-    if ( ((int)self.timePassed%5) == 0 && self.timePassed < (float)((int)self.timePassed)+0.1 && self	.timePassed > 1)   {
-        self.player.manaPointsLeft++;
-        [self.manaPointsCounter setText:[NSString stringWithFormat:@"%d", self.player.manaPointsLeft]];
+    if ( self.timePassed < (float)((int)self.timePassed)+0.1 && self.timePassed > 1 ) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"timerTicked" object:nil];
+        
+        if ( ((int)self.timePassed%5) == 0 )   {
+            self.player.manaPointsLeft++;
+            [self.manaPointsCounter setText:[NSString stringWithFormat:@"%d", self.player.manaPointsLeft]];
+        }
     }
     [self.progressView setProgress:self.timePassed/120.0];
     [self.timePassedLabel setText:[NSString stringWithFormat:@"%.1f", self.timePassed]];
@@ -132,17 +136,21 @@
 
     if(self.isActionSelected) {
         self.isActionSelected = NO;
+        _gameSceneView.isActionSelected = NO;
         [UIView animateWithDuration:1 animations:^(void){
             [[tableView cellForRowAtIndexPath:indexPath].backgroundView setAlpha:1];
         }];
         self.currentChosenAction = nil;
+        _gameSceneView.currentChosenAction = nil;
     }
     else {
         self.isActionSelected = YES;
+        _gameSceneView.isActionSelected = YES;
         [UIView animateWithDuration:0.7 animations:^(void){
             [[tableView cellForRowAtIndexPath:indexPath].backgroundView setAlpha:0.5];
         }];
         self.currentChosenAction = self.player.currentActions[[indexPath row]];
+        _gameSceneView.currentChosenAction = self.player.currentActions[[indexPath row]];
         NSLog(@"%f", self.currentChosenAction.effectOnConcentration);
     }
 
@@ -150,6 +158,10 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 80.0;
+}
+
+-(void)playedCardSuccessful:(BOOL)successful {
+    //TODO
 }
 
 @end
