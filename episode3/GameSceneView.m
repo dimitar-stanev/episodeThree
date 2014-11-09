@@ -47,7 +47,7 @@
         self.programmerViews = @[_programmer1View, _programmer2View, _programmer3View, _programmer4View, _programmer5View, _programmer6View];
         self.programmerStatuses = @[_programmer1Status, _programmer2Status, _programmer3Status, _programmer4Status, _programmer5Status, _programmer6Status];
         NSArray *directions = @[@(DirectionUp), @(DirectionUp), @(DirectionUp), @(DirectionDown), @(DirectionDown), @(DirectionDown)];
-        NSArray *images = @[@"character_fat_pink_one_140", @"character_fat_pink_one_140", @"character_fat_pink_one_140", @"character_fat_pink_one_140", @"character_fat_pink_one_140", @"character_fat_pink_one_140"];
+        NSArray *images = @[@"character_skinny_two_2", @"character_fat_two_2", @"character_skinny_two_1", @"character_fat_two_1", @"character_skinny_two_3", @"character_skinny_two_4"];
         NSArray *concentration = @[@6, @2, @2, @4, @4, @2];
         NSArray *energy = @[@2, @6, @2, @4, @2, @4];
         NSArray *health = @[@2, @2, @6, @2, @4, @4];

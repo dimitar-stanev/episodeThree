@@ -14,7 +14,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="488" height="280"/>
                 </imageView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KrL-X8-MSH">
-                    <rect key="frame" x="35" y="125" width="104" height="30"/>
+                    <rect key="frame" x="35" y="130" width="104" height="30"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player_status.png" translatesAutoresizingMaskIntoConstraints="NO" id="g7M-8o-sNN">
                             <rect key="frame" x="-2" y="0.0" width="108" height="30"/>
@@ -22,7 +22,7 @@
                     </subviews>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vun-G0-t1g">
-                    <rect key="frame" x="147" y="125" width="104" height="30"/>
+                    <rect key="frame" x="147" y="130" width="104" height="30"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player_status.png" translatesAutoresizingMaskIntoConstraints="NO" id="odE-Xj-Q6C">
                             <rect key="frame" x="-2" y="0.0" width="108" height="30"/>
@@ -30,7 +30,7 @@
                     </subviews>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oty-NB-OsE">
-                    <rect key="frame" x="261" y="125" width="104" height="30"/>
+                    <rect key="frame" x="261" y="130" width="104" height="30"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player_status.png" translatesAutoresizingMaskIntoConstraints="NO" id="F4A-t2-tdD">
                             <rect key="frame" x="-2" y="0.0" width="108" height="30"/>
@@ -38,7 +38,7 @@
                     </subviews>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oRw-7I-TmK">
-                    <rect key="frame" x="352" y="86" width="104" height="30"/>
+                    <rect key="frame" x="352" y="91" width="104" height="30"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player_status.png" translatesAutoresizingMaskIntoConstraints="NO" id="S0z-q6-vvV">
                             <rect key="frame" x="-2" y="0.0" width="108" height="30"/>
@@ -54,15 +54,11 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a9E-fv-jYg">
-                    <rect key="frame" x="367" y="21" width="70" height="70"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xjN-IV-Bcl">
-                    <rect key="frame" x="141" y="21" width="70" height="70"/>
+                    <rect key="frame" x="367" y="14" width="70" height="70"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dhf-IB-zdU">
-                    <rect key="frame" x="238" y="86" width="104" height="30"/>
+                    <rect key="frame" x="238" y="91" width="104" height="30"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player_status.png" translatesAutoresizingMaskIntoConstraints="NO" id="VgU-sp-pHf">
                             <rect key="frame" x="-2" y="0.0" width="108" height="30"/>
@@ -70,7 +66,7 @@
                     </subviews>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BFc-i5-SXA">
-                    <rect key="frame" x="125" y="86" width="104" height="30"/>
+                    <rect key="frame" x="125" y="91" width="104" height="30"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="player_status.png" translatesAutoresizingMaskIntoConstraints="NO" id="dqw-eB-PhP">
                             <rect key="frame" x="-2" y="0.0" width="108" height="30"/>
@@ -78,11 +74,15 @@
                     </subviews>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xSp-Xn-OwA">
-                    <rect key="frame" x="277" y="154" width="70" height="70"/>
+                    <rect key="frame" x="277" y="161" width="70" height="70"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2L-bh-9qt">
-                    <rect key="frame" x="164" y="154" width="70" height="70"/>
+                    <rect key="frame" x="164" y="161" width="70" height="70"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xjN-IV-Bcl">
+                    <rect key="frame" x="142" y="14" width="70" height="70"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
