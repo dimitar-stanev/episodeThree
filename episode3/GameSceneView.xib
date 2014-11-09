@@ -14,51 +14,51 @@
                     <rect key="frame" x="0.0" y="0.0" width="488" height="280"/>
                 </imageView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KrL-X8-MSH">
-                    <rect key="frame" x="149" y="125" width="100" height="30"/>
+                    <rect key="frame" x="132" y="125" width="104" height="30"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.33000000000000002" colorSpace="calibratedRGB"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vun-G0-t1g">
-                    <rect key="frame" x="255" y="125" width="100" height="30"/>
+                    <rect key="frame" x="243" y="124" width="104" height="30"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.33000000000000002" colorSpace="calibratedRGB"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oty-NB-OsE">
-                    <rect key="frame" x="360" y="125" width="100" height="30"/>
+                    <rect key="frame" x="358" y="125" width="104" height="30"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.33000000000000002" colorSpace="calibratedRGB"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oRw-7I-TmK">
-                    <rect key="frame" x="360" y="86" width="100" height="30"/>
+                    <rect key="frame" x="358" y="86" width="104" height="30"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.33000000000000002" colorSpace="calibratedRGB"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P3P-aC-zob">
-                    <rect key="frame" x="164" y="152" width="70" height="70"/>
+                    <rect key="frame" x="149" y="154" width="70" height="70"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wXo-rf-Evo">
-                    <rect key="frame" x="270" y="19" width="70" height="70"/>
+                    <rect key="frame" x="262" y="21" width="70" height="70"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a9E-fv-jYg">
-                    <rect key="frame" x="375" y="19" width="70" height="70"/>
+                    <rect key="frame" x="375" y="21" width="70" height="70"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xjN-IV-Bcl">
-                    <rect key="frame" x="164" y="19" width="70" height="70"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2L-bh-9qt">
-                    <rect key="frame" x="270" y="152" width="70" height="70"/>
+                    <rect key="frame" x="149" y="21" width="70" height="70"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dhf-IB-zdU">
-                    <rect key="frame" x="255" y="86" width="100" height="30"/>
+                    <rect key="frame" x="243" y="86" width="104" height="30"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.33000000000000002" colorSpace="calibratedRGB"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BFc-i5-SXA">
-                    <rect key="frame" x="149" y="86" width="100" height="30"/>
+                    <rect key="frame" x="132" y="86" width="104" height="30"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.33000000000000002" colorSpace="calibratedRGB"/>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xSp-Xn-OwA">
-                    <rect key="frame" x="375" y="152" width="70" height="70"/>
+                    <rect key="frame" x="375" y="154" width="70" height="70"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2L-bh-9qt">
+                    <rect key="frame" x="262" y="154" width="70" height="70"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>

@@ -65,6 +65,9 @@
             [programmerButtons addObject:programmerButton];
             
             ProgrammerStatusView *statusView = [programmer programmerStatusView];
+            CGRect frame = statusView.frame;
+            frame.origin.x +=2;
+            [statusView setFrame:frame];
             [_programmerStatuses[i] addSubview:statusView];
             [programmerStatusViews addObject:statusView];
             

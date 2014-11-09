@@ -25,13 +25,13 @@
 }
 */
 
--(void)setConcentration:(int)concentration color:(UIColor*)concentrationColor energy:(int)energy color:(UIColor*)energyColor health:(int)health color:(UIColor*)healthColor
+-(void)setConcentration:(double)concentration color:(UIColor*)concentrationColor energy:(double)energy color:(UIColor*)energyColor health:(double)health color:(UIColor*)healthColor
 {
-    [_concentrationLabel setText:[NSString stringWithFormat:@"%d", concentration]];
+    [_concentrationLabel setText:[NSString stringWithFormat:@"%.1f", concentration]];
     [_concentrationLabel setTextColor:concentrationColor];
-    [_energyLabel setText:[NSString stringWithFormat:@"%d", energy]];
+    [_energyLabel setText:[NSString stringWithFormat:@"%.1f", energy]];
     [_energyLabel setTextColor:energyColor];
-    [_healthLabel setText:[NSString stringWithFormat:@"%d", health]];
+    [_healthLabel setText:[NSString stringWithFormat:@"%.1f", health]];
     [_healthLabel setTextColor:healthColor];
 }
 
