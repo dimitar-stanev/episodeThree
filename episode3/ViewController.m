@@ -113,14 +113,30 @@
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     
     switch([indexPath row]) {
-        case 0: break;
-        case 1: break;
-        case 2: break;
-        case 3: break;
+        case 0: {
+            UIImage *img = [UIImage imageNamed: [self.player.currentActions[0] imagePath] ];
+            UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+            [cell setBackgroundView:imageView];
+        } break;
+        case 1: {
+            UIImage *img = [UIImage imageNamed: [self.player.currentActions[1] imagePath] ];
+            UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+            [cell setBackgroundView:imageView];
+        } break;
+        case 2: {
+            UIImage *img = [UIImage imageNamed: [self.player.currentActions[2] imagePath] ];
+            UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+            [cell setBackgroundView:imageView];
+        } break;
+        case 3: {
+            UIImage *img = [UIImage imageNamed: [self.player.currentActions[3] imagePath] ];
+            UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+            [cell setBackgroundView:imageView];
+        } break;
     }
-    UIImage *img = [UIImage imageNamed:@"womens_circle_2.jpg"];
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
-    [cell setBackgroundView:imageView];
+//    UIImage *img = [UIImage imageNamed:@"womens_circle_2.jpg"];
+//    UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+//    [cell setBackgroundView:imageView];
      return cell;
  }
 

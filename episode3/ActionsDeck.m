@@ -95,6 +95,7 @@
     healthMana4.numberOfPeopleAffected = 6;
     healthMana4.disablesPlayer = NO;
     healthMana4.manaCost = 4;
+    healthMana4.imagePath = @"actionIcon_disease.jpg";
     [self addObject:healthMana4 toArray:newDeck count:4];
     
     Action *removePlayer = [[Action alloc ] init];
