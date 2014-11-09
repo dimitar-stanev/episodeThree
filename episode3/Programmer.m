@@ -49,6 +49,9 @@
     UIColor *healthColor = (_healthState.timeLeft == 0) ? [UIColor blackColor] : (_healthState.immune) ? [UIColor greenColor] : [UIColor redColor];
     
     [self.programmerStatusView setConcentration:concentration color:concentrationColor energy:energy color:energyColor health:health color:healthColor];
+    
+    double progress = (concentration + energy + health) / 60;
+    [_vc addProgress:progress];
 }
 
 -(BOOL)canBeAffectedByAction:(Action *)action

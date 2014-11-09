@@ -82,7 +82,7 @@
     Action *healthMana2 = [[Action alloc ] init];
     healthMana2.effectOnEnergy = 0;
     healthMana2.effectOnConcentration = 0;
-    healthMana2.effectOnHealth = -0.1;
+    healthMana2.effectOnHealth = -1;
     healthMana2.numberOfPeopleAffected = 1;
     healthMana2.disablesPlayer = NO;
     healthMana2.manaCost = 2;

@@ -58,6 +58,7 @@
         
         for ( int i = 0; i < 6; i++ ) {
             Programmer *programmer = [[Programmer alloc] initWithImage:images[i] direction:[directions[i] intValue] concentration:[concentration[i] intValue] energy:[energy[i] intValue] health:[health[i] intValue]];
+            [programmer setVc:self.vc];
             
             ProgrammerView *programmerButton = [programmer programmerView];
             [programmerButton addTarget:self action:@selector(didPressProgrammerButton:) forControlEvents:UIControlEventTouchUpInside];
@@ -78,6 +79,15 @@
         _programmerButtons = [programmerButtons copy];
         _programmerStatusViews = [programmerStatusViews copy];
         _programmers = [programmers copy];
+    }
+}
+
+-(void)setVc:(ViewController *)vc
+{
+    _vc = vc;
+    
+    for ( Programmer *programmer in _programmers ) {
+        programmer.vc = vc;
     }
 }
 

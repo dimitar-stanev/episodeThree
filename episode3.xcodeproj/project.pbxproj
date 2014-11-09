@@ -22,6 +22,11 @@
 		84E9A0061A0EC03400764E5A /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E9A0051A0EC03400764E5A /* Player.m */; };
 		84E9A0081A0EE56B00764E5A /* womens_circle_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E9A0071A0EE56B00764E5A /* womens_circle_2.png */; };
 		F8419AA51A0F1A0000732CD9 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8419AA41A0F1A0000732CD9 /* background.jpg */; };
+		F8419AA71A0F3E9100732CD9 /* game_status.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8419AA61A0F3E9100732CD9 /* game_status.jpg */; };
+		F8419AA91A0F411100732CD9 /* distraction.png in Resources */ = {isa = PBXBuildFile; fileRef = F8419AA81A0F411100732CD9 /* distraction.png */; };
+		F8419AAC1A0F413200732CD9 /* energy.png in Resources */ = {isa = PBXBuildFile; fileRef = F8419AAA1A0F413200732CD9 /* energy.png */; };
+		F8419AAD1A0F413200732CD9 /* health.png in Resources */ = {isa = PBXBuildFile; fileRef = F8419AAB1A0F413200732CD9 /* health.png */; };
+		F8419AAF1A0F456B00732CD9 /* player_status.png in Resources */ = {isa = PBXBuildFile; fileRef = F8419AAE1A0F456B00732CD9 /* player_status.png */; };
 		F8524AB51A0E4673009AE620 /* GameSceneView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8524AB41A0E4673009AE620 /* GameSceneView.m */; };
 		F8524ABA1A0E4C2D009AE620 /* ProgrammerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8524AB91A0E4C2D009AE620 /* ProgrammerView.m */; };
 		F8524ABC1A0E4C50009AE620 /* ProgrammerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8524ABB1A0E4C50009AE620 /* ProgrammerView.xib */; };
@@ -69,6 +74,11 @@
 		84E9A0051A0EC03400764E5A /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		84E9A0071A0EE56B00764E5A /* womens_circle_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = womens_circle_2.png; sourceTree = "<group>"; };
 		F8419AA41A0F1A0000732CD9 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = Images/background.jpg; sourceTree = "<group>"; };
+		F8419AA61A0F3E9100732CD9 /* game_status.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = game_status.jpg; sourceTree = "<group>"; };
+		F8419AA81A0F411100732CD9 /* distraction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = distraction.png; sourceTree = "<group>"; };
+		F8419AAA1A0F413200732CD9 /* energy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = energy.png; sourceTree = "<group>"; };
+		F8419AAB1A0F413200732CD9 /* health.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = health.png; sourceTree = "<group>"; };
+		F8419AAE1A0F456B00732CD9 /* player_status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_status.png; sourceTree = "<group>"; };
 		F8524AB31A0E4673009AE620 /* GameSceneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSceneView.h; sourceTree = "<group>"; };
 		F8524AB41A0E4673009AE620 /* GameSceneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSceneView.m; sourceTree = "<group>"; };
 		F8524AB61A0E4A86009AE620 /* GameSceneView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameSceneView.xib; sourceTree = "<group>"; };
@@ -106,6 +116,11 @@
 		84B5A1321A0E65C9008B0D86 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F8419AAE1A0F456B00732CD9 /* player_status.png */,
+				F8419AA81A0F411100732CD9 /* distraction.png */,
+				F8419AAA1A0F413200732CD9 /* energy.png */,
+				F8419AAB1A0F413200732CD9 /* health.png */,
+				F8419AA61A0F3E9100732CD9 /* game_status.jpg */,
 				84B5A1331A0E65DB008B0D86 /* womens_circle_2.jpg */,
 				849BB99A1A0F2AE700E23750 /* actionIcon_disease.jpg */,
 				84E9A0071A0EE56B00764E5A /* womens_circle_2.png */,
@@ -284,17 +299,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8419AA91A0F411100732CD9 /* distraction.png in Resources */,
 				84BC0CE01A0E319300E2AEC8 /* Main.storyboard in Resources */,
 				F8419AA51A0F1A0000732CD9 /* background.jpg in Resources */,
 				F8524AC21A0E759A009AE620 /* character_fat_pink_one_140.png in Resources */,
+				F8419AAF1A0F456B00732CD9 /* player_status.png in Resources */,
 				84B5A1341A0E65DB008B0D86 /* womens_circle_2.jpg in Resources */,
 				84E9A0081A0EE56B00764E5A /* womens_circle_2.png in Resources */,
 				84BC0CE51A0E319300E2AEC8 /* LaunchScreen.xib in Resources */,
+				F8419AAC1A0F413200732CD9 /* energy.png in Resources */,
 				F8524AC81A0EC96C009AE620 /* ProgrammerStatusView.xib in Resources */,
 				F8524ABC1A0E4C50009AE620 /* ProgrammerView.xib in Resources */,
 				F8524AC01A0E6CA7009AE620 /* GameSceneView.xib in Resources */,
 				84BC0CE21A0E319300E2AEC8 /* Images.xcassets in Resources */,
 				849BB99B1A0F2AE700E23750 /* actionIcon_disease.jpg in Resources */,
+				F8419AAD1A0F413200732CD9 /* health.png in Resources */,
+				F8419AA71A0F3E9100732CD9 /* game_status.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

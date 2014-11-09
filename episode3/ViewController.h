@@ -12,5 +12,9 @@
 
 -(void)playedCardSuccessful:(BOOL)successful;
 
+-(void)addProgress:(double)progress;
+
+-(void)addMaxProgress:(double)progress;
+
 @end
 

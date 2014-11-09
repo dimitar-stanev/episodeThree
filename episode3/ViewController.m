@@ -27,6 +27,9 @@
 @property (strong, nonatomic) ActionsDeck *drawnDeck;
 @property (nonatomic) BOOL isActionSelected;
 @property (strong, nonatomic) Action *currentChosenAction;
+
+@property (assign, nonatomic) double progress;
+@property (assign, nonatomic) double maxProgress;
 @end
 
 @implementation ViewController
@@ -82,6 +85,9 @@
                                                 userInfo: nil repeats:YES];
     self.timePassed = 0;
     
+    _progress = 0;
+    _maxProgress = 120;
+    
 }
 
 -(void) updateTimer {
@@ -89,6 +95,7 @@
     if (self.timePassed > 180) {
         [self.timer invalidate];
         self.timer = nil;
+        [self winGame];
     }
     if ( self.timePassed < (float)((int)self.timePassed)+0.1 && self.timePassed > 1 ) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"timerTicked" object:nil];
@@ -98,7 +105,6 @@
             [self.manaPointsCounter setText:[NSString stringWithFormat:@"%d", self.player.manaPointsLeft]];
         }
     }
-    [self.progressView setProgress:self.timePassed/120.0];
     [self.timePassedLabel setText:[NSString stringWithFormat:@"%.1f", self.timePassed]];
 }
 
@@ -190,6 +196,38 @@
         self.isActionSelected = NO;
         self.currentChosenAction = nil;
     }
+}
+
+-(void)addProgress:(double)progress
+{
+    _progress += progress;
+    [self updateProgressBar];
+}
+
+-(void)addMaxProgress:(double)progress
+{
+    _maxProgress += progress;
+    [self updateProgressBar];
+}
+
+-(void)updateProgressBar
+{
+    [self.progressView setProgress:_progress/_maxProgress];
+    if ( _progress >= _maxProgress ) {
+        [self.timer invalidate];
+        self.timer = nil;
+        [self loseGame];
+    }
+}
+
+-(void)loseGame
+{
+    
+}
+
+-(void)winGame
+{
+    
 }
 
 @end

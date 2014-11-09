@@ -11,6 +11,7 @@
 #import "ProgrammerView.h"
 #import "ProgrammerStatusView.h"
 #import "Action.h"
+#import "ViewController.h"
 
 @interface Programmer : NSObject
 
@@ -22,6 +23,7 @@
 @property (strong, nonatomic) ProgrammerState *healthState;
 @property (strong, nonatomic) ProgrammerView *programmerView;
 @property (strong, nonatomic) ProgrammerStatusView *programmerStatusView;
+@property (strong, nonatomic) ViewController *vc;
 
 -(instancetype)initWithImage:(NSString*)imageName direction:(Direction)direction concentration:(int)concentration energy:(int)energy health:(int)health;
 -(BOOL)canBeAffectedByAction:(Action *)action;
