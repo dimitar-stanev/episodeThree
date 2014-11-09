@@ -12,6 +12,11 @@
 @implementation Programmer {
     BOOL _removed;
     NSTimeInterval _removedTime;
+    
+    UIImage *_imageOne;
+    UIImage *_imageTwo;
+    
+    BOOL _useImageTwo;
 }
 
 -(instancetype)initWithImage:(NSString*)imageName direction:(Direction)direction concentration:(int)concentration energy:(int)energy health:(int)health
@@ -22,8 +27,11 @@
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(update) name:@"timerTicked" object:nil];
         
+        _imageOne = [UIImage imageNamed:imageName];
+        _imageTwo = [UIImage imageNamed:[NSString stringWithFormat:@"%@2", imageName]];
+        
         self.programmerView = [[[NSBundle mainBundle] loadNibNamed:@"ProgrammerView"owner:nil options:nil] objectAtIndex:0];
-        [self.programmerView setProgrammerImage:imageName programmer:self andDirection:direction];
+        [self.programmerView setProgrammerImage:_imageOne programmer:self andDirection:direction];
         
         self.programmerStatusView = [[[NSBundle mainBundle] loadNibNamed:@"ProgrammerStatusView"owner:nil options:nil] objectAtIndex:0];
         
@@ -73,47 +81,56 @@
 
 -(void)affectedByAction:(Action *)action
 {
-    if ( _removed == NO ) {
-        if ( 0 != action.effectOnConcentration ) {
-            [_concentrationState setEfficiency:(1+action.effectOnConcentration)];
-            [_concentrationState setTimeLeft:30];
-            [_concentrationState setImmune:NO];
-        }
-        
-        else if ( 0 != action.effectOnEnergy ) {
-            [_energyState setEfficiency:(1+action.effectOnEnergy)];
-            [_energyState setTimeLeft:30];
-            [_energyState setImmune:NO];
-        }
-        
-        else if ( 0 != action.effectOnHealth ) {
-            [_healthState setEfficiency:(1+action.effectOnHealth)];
-            [_healthState setTimeLeft:30];
-            [_healthState setImmune:NO];
-        }
-        
-        else if ( YES == action.disablesPlayer ) {
-            _removed = YES;
-            _removedTime = 30.0;
-            [_programmerStatusView.superview setHidden:YES];
-            [_programmerView setHidden:YES];
-        }
-        
-        else if ( NO ) {
-            //TODO - add requirements change
-        }
+    if ( 0 != action.effectOnConcentration ) {
+        [_concentrationState setEfficiency:(1+action.effectOnConcentration)];
+        [_concentrationState setTimeLeft:30];
+        [_concentrationState setImmune:NO];
     }
+    
+    else if ( 0 != action.effectOnEnergy ) {
+        [_energyState setEfficiency:(1+action.effectOnEnergy)];
+        [_energyState setTimeLeft:30];
+        [_energyState setImmune:NO];
+    }
+    
+    else if ( 0 != action.effectOnHealth ) {
+        [_healthState setEfficiency:(1+action.effectOnHealth)];
+        [_healthState setTimeLeft:30];
+        [_healthState setImmune:NO];
+    }
+    
+    else if ( YES == action.disablesPlayer ) {
+        _removed = YES;
+        _removedTime = 30.0;
+        [UIView animateWithDuration:1 animations:^(void) {
+            [_programmerStatusView.superview setAlpha:0];
+            [_programmerView setAlpha:0];
+        }];
+
+    }
+    
+    else if ( 0 != action.addWork) {
+        [self.vc addMaxProgress:action.addWork];
+    }
+    
+    [_programmerView showEffectImage:action.imageAnimationPath];
 }
 
 -(void)update
 {
+    if ( _useImageTwo ) [_programmerView setProgrammerImage:_imageTwo];
+    else [_programmerView setProgrammerImage:_imageOne];
+    _useImageTwo = !_useImageTwo;
+    
     if ( _removed ) {
         _removedTime -= 1;
         if ( _removedTime <= 0 ) {
             _removedTime = 0;
             _removed = NO;
-            [_programmerStatusView.superview setHidden:NO];
-            [_programmerView setHidden:NO];
+            [UIView animateWithDuration:1 animations:^(void) {
+                [_programmerStatusView.superview setAlpha:1];
+                [_programmerView setAlpha:1];
+            }];
         }
     }
     

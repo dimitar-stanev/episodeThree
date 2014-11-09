@@ -53,6 +53,23 @@
 		F8524AC81A0EC96C009AE620 /* ProgrammerStatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8524AC71A0EC96C009AE620 /* ProgrammerStatusView.xib */; };
 		F8524ACB1A0ED79E009AE620 /* Programmer.m in Sources */ = {isa = PBXBuildFile; fileRef = F8524ACA1A0ED79E009AE620 /* Programmer.m */; };
 		F8524ACE1A0ED898009AE620 /* ProgrammerState.m in Sources */ = {isa = PBXBuildFile; fileRef = F8524ACD1A0ED898009AE620 /* ProgrammerState.m */; };
+		F881BBB71A0FA1B300E3B8F7 /* biohazard_140.png in Resources */ = {isa = PBXBuildFile; fileRef = F881BBAD1A0FA1B300E3B8F7 /* biohazard_140.png */; };
+		F881BBB81A0FA1B300E3B8F7 /* clock_140.png in Resources */ = {isa = PBXBuildFile; fileRef = F881BBAE1A0FA1B300E3B8F7 /* clock_140.png */; };
+		F881BBB91A0FA1B300E3B8F7 /* fire_140.png in Resources */ = {isa = PBXBuildFile; fileRef = F881BBAF1A0FA1B300E3B8F7 /* fire_140.png */; };
+		F881BBBA1A0FA1B300E3B8F7 /* hack_140.png in Resources */ = {isa = PBXBuildFile; fileRef = F881BBB01A0FA1B300E3B8F7 /* hack_140.png */; };
+		F881BBBB1A0FA1B300E3B8F7 /* hammer_140.png in Resources */ = {isa = PBXBuildFile; fileRef = F881BBB11A0FA1B300E3B8F7 /* hammer_140.png */; };
+		F881BBBC1A0FA1B300E3B8F7 /* head_each_140.png in Resources */ = {isa = PBXBuildFile; fileRef = F881BBB21A0FA1B300E3B8F7 /* head_each_140.png */; };
+		F881BBBD1A0FA1B300E3B8F7 /* heart_140.png in Resources */ = {isa = PBXBuildFile; fileRef = F881BBB31A0FA1B300E3B8F7 /* heart_140.png */; };
+		F881BBBE1A0FA1B300E3B8F7 /* shit_140.png in Resources */ = {isa = PBXBuildFile; fileRef = F881BBB41A0FA1B300E3B8F7 /* shit_140.png */; };
+		F881BBBF1A0FA1B300E3B8F7 /* sickness_140.png in Resources */ = {isa = PBXBuildFile; fileRef = F881BBB51A0FA1B300E3B8F7 /* sickness_140.png */; };
+		F881BBC01A0FA1B300E3B8F7 /* sleep_140.png in Resources */ = {isa = PBXBuildFile; fileRef = F881BBB61A0FA1B300E3B8F7 /* sleep_140.png */; };
+		F881BBC71A0FAE3400E3B8F7 /* character_fat_two_12.png in Resources */ = {isa = PBXBuildFile; fileRef = F881BBC11A0FAE3400E3B8F7 /* character_fat_two_12.png */; };
+		F881BBC81A0FAE3400E3B8F7 /* character_fat_two_22.png in Resources */ = {isa = PBXBuildFile; fileRef = F881BBC21A0FAE3400E3B8F7 /* character_fat_two_22.png */; };
+		F881BBC91A0FAE3400E3B8F7 /* character_skinny_two_12.png in Resources */ = {isa = PBXBuildFile; fileRef = F881BBC31A0FAE3400E3B8F7 /* character_skinny_two_12.png */; };
+		F881BBCA1A0FAE3400E3B8F7 /* character_skinny_two_22.png in Resources */ = {isa = PBXBuildFile; fileRef = F881BBC41A0FAE3400E3B8F7 /* character_skinny_two_22.png */; };
+		F881BBCB1A0FAE3400E3B8F7 /* character_skinny_two_32.png in Resources */ = {isa = PBXBuildFile; fileRef = F881BBC51A0FAE3400E3B8F7 /* character_skinny_two_32.png */; };
+		F881BBCC1A0FAE3400E3B8F7 /* character_skinny_two_42.png in Resources */ = {isa = PBXBuildFile; fileRef = F881BBC61A0FAE3400E3B8F7 /* character_skinny_two_42.png */; };
+		F8A1136E1A0F8AE500E418ED /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A1136D1A0F8AE500E418ED /* button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +144,23 @@
 		F8524ACA1A0ED79E009AE620 /* Programmer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Programmer.m; sourceTree = "<group>"; };
 		F8524ACC1A0ED898009AE620 /* ProgrammerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgrammerState.h; sourceTree = "<group>"; };
 		F8524ACD1A0ED898009AE620 /* ProgrammerState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgrammerState.m; sourceTree = "<group>"; };
+		F881BBAD1A0FA1B300E3B8F7 /* biohazard_140.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = biohazard_140.png; sourceTree = "<group>"; };
+		F881BBAE1A0FA1B300E3B8F7 /* clock_140.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock_140.png; sourceTree = "<group>"; };
+		F881BBAF1A0FA1B300E3B8F7 /* fire_140.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire_140.png; sourceTree = "<group>"; };
+		F881BBB01A0FA1B300E3B8F7 /* hack_140.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hack_140.png; sourceTree = "<group>"; };
+		F881BBB11A0FA1B300E3B8F7 /* hammer_140.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hammer_140.png; sourceTree = "<group>"; };
+		F881BBB21A0FA1B300E3B8F7 /* head_each_140.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head_each_140.png; sourceTree = "<group>"; };
+		F881BBB31A0FA1B300E3B8F7 /* heart_140.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_140.png; sourceTree = "<group>"; };
+		F881BBB41A0FA1B300E3B8F7 /* shit_140.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shit_140.png; sourceTree = "<group>"; };
+		F881BBB51A0FA1B300E3B8F7 /* sickness_140.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sickness_140.png; sourceTree = "<group>"; };
+		F881BBB61A0FA1B300E3B8F7 /* sleep_140.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sleep_140.png; sourceTree = "<group>"; };
+		F881BBC11A0FAE3400E3B8F7 /* character_fat_two_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character_fat_two_12.png; sourceTree = "<group>"; };
+		F881BBC21A0FAE3400E3B8F7 /* character_fat_two_22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character_fat_two_22.png; sourceTree = "<group>"; };
+		F881BBC31A0FAE3400E3B8F7 /* character_skinny_two_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character_skinny_two_12.png; sourceTree = "<group>"; };
+		F881BBC41A0FAE3400E3B8F7 /* character_skinny_two_22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character_skinny_two_22.png; sourceTree = "<group>"; };
+		F881BBC51A0FAE3400E3B8F7 /* character_skinny_two_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character_skinny_two_32.png; sourceTree = "<group>"; };
+		F881BBC61A0FAE3400E3B8F7 /* character_skinny_two_42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character_skinny_two_42.png; sourceTree = "<group>"; };
+		F8A1136D1A0F8AE500E418ED /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +184,22 @@
 		84B5A1321A0E65C9008B0D86 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F881BBC11A0FAE3400E3B8F7 /* character_fat_two_12.png */,
+				F881BBC21A0FAE3400E3B8F7 /* character_fat_two_22.png */,
+				F881BBC31A0FAE3400E3B8F7 /* character_skinny_two_12.png */,
+				F881BBC41A0FAE3400E3B8F7 /* character_skinny_two_22.png */,
+				F881BBC51A0FAE3400E3B8F7 /* character_skinny_two_32.png */,
+				F881BBC61A0FAE3400E3B8F7 /* character_skinny_two_42.png */,
+				F881BBAD1A0FA1B300E3B8F7 /* biohazard_140.png */,
+				F881BBAE1A0FA1B300E3B8F7 /* clock_140.png */,
+				F881BBAF1A0FA1B300E3B8F7 /* fire_140.png */,
+				F881BBB01A0FA1B300E3B8F7 /* hack_140.png */,
+				F881BBB11A0FA1B300E3B8F7 /* hammer_140.png */,
+				F881BBB21A0FA1B300E3B8F7 /* head_each_140.png */,
+				F881BBB31A0FA1B300E3B8F7 /* heart_140.png */,
+				F881BBB41A0FA1B300E3B8F7 /* shit_140.png */,
+				F881BBB51A0FA1B300E3B8F7 /* sickness_140.png */,
+				F881BBB61A0FA1B300E3B8F7 /* sleep_140.png */,
 				F8419AAE1A0F456B00732CD9 /* player_status.png */,
 				F8419AA81A0F411100732CD9 /* distraction.png */,
 				F8419AAA1A0F413200732CD9 /* energy.png */,
@@ -177,6 +227,7 @@
 				F8419AB31A0F533500732CD9 /* character_skinny_two_2.png */,
 				F8419AB41A0F533500732CD9 /* character_skinny_two_3.png */,
 				F8419AB51A0F533500732CD9 /* character_skinny_two_4.png */,
+				F8A1136D1A0F8AE500E418ED /* button.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -353,32 +404,49 @@
 				F8419AA91A0F411100732CD9 /* distraction.png in Resources */,
 				84BC0CE01A0E319300E2AEC8 /* Main.storyboard in Resources */,
 				F8419ACA1A0F57B400732CD9 /* Health1mana.png in Resources */,
+				F881BBBE1A0FA1B300E3B8F7 /* shit_140.png in Resources */,
 				F8419AA51A0F1A0000732CD9 /* background.jpg in Resources */,
 				F8524AC21A0E759A009AE620 /* character_fat_pink_one_140.png in Resources */,
 				F8419AAF1A0F456B00732CD9 /* player_status.png in Resources */,
 				F8419AC91A0F57B400732CD9 /* girlfriend2Mana.png in Resources */,
+				F8A1136E1A0F8AE500E418ED /* button.png in Resources */,
 				F8419AD01A0F57B400732CD9 /* UnderConstruction4Mana.png in Resources */,
 				84B5A1341A0E65DB008B0D86 /* womens_circle_2.jpg in Resources */,
+				F881BBBC1A0FA1B300E3B8F7 /* head_each_140.png in Resources */,
+				F881BBB91A0FA1B300E3B8F7 /* fire_140.png in Resources */,
+				F881BBC01A0FA1B300E3B8F7 /* sleep_140.png in Resources */,
 				F8419AB61A0F533500732CD9 /* character_fat_two_1.png in Resources */,
 				F8419AC71A0F57B400732CD9 /* backToWork5Mana.png in Resources */,
+				F881BBCC1A0FAE3400E3B8F7 /* character_skinny_two_42.png in Resources */,
 				84E9A0081A0EE56B00764E5A /* womens_circle_2.png in Resources */,
 				84BC0CE51A0E319300E2AEC8 /* LaunchScreen.xib in Resources */,
 				F8419AAC1A0F413200732CD9 /* energy.png in Resources */,
 				F8419ACC1A0F57B400732CD9 /* Health4mana.png in Resources */,
 				F8524AC81A0EC96C009AE620 /* ProgrammerStatusView.xib in Resources */,
 				F8419AB91A0F533500732CD9 /* character_skinny_two_2.png in Resources */,
+				F881BBC71A0FAE3400E3B8F7 /* character_fat_two_12.png in Resources */,
 				F8524ABC1A0E4C50009AE620 /* ProgrammerView.xib in Resources */,
 				F8524AC01A0E6CA7009AE620 /* GameSceneView.xib in Resources */,
+				F881BBBF1A0FA1B300E3B8F7 /* sickness_140.png in Resources */,
+				F881BBC91A0FAE3400E3B8F7 /* character_skinny_two_12.png in Resources */,
+				F881BBB71A0FA1B300E3B8F7 /* biohazard_140.png in Resources */,
 				84BC0CE21A0E319300E2AEC8 /* Images.xcassets in Resources */,
 				849BB99B1A0F2AE700E23750 /* actionIcon_disease.jpg in Resources */,
 				F8419AB81A0F533500732CD9 /* character_skinny_two_1.png in Resources */,
 				F8419ACB1A0F57B400732CD9 /* Health2Mana.png in Resources */,
 				F8419AC81A0F57B400732CD9 /* coffe1Mana.png in Resources */,
+				F881BBC81A0FAE3400E3B8F7 /* character_fat_two_22.png in Resources */,
+				F881BBCA1A0FAE3400E3B8F7 /* character_skinny_two_22.png in Resources */,
 				F8419AB71A0F533500732CD9 /* character_fat_two_2.png in Resources */,
 				F8419ACE1A0F57B400732CD9 /* shit3Mana.png in Resources */,
+				F881BBB81A0FA1B300E3B8F7 /* clock_140.png in Resources */,
 				F8419ACF1A0F57B400732CD9 /* sleepy2Mana.png in Resources */,
+				F881BBBB1A0FA1B300E3B8F7 /* hammer_140.png in Resources */,
+				F881BBBD1A0FA1B300E3B8F7 /* heart_140.png in Resources */,
 				F8419AAD1A0F413200732CD9 /* health.png in Resources */,
+				F881BBBA1A0FA1B300E3B8F7 /* hack_140.png in Resources */,
 				F8419AA71A0F3E9100732CD9 /* game_status.jpg in Resources */,
+				F881BBCB1A0FAE3400E3B8F7 /* character_skinny_two_32.png in Resources */,
 				F8419ABA1A0F533500732CD9 /* character_skinny_two_3.png in Resources */,
 				F8419ACD1A0F57B400732CD9 /* heat4Mana.png in Resources */,
 				F8419AD11A0F57B400732CD9 /* virus1Mana.png in Resources */,

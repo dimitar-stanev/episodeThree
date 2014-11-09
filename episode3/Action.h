@@ -17,4 +17,5 @@
 @property (nonatomic) BOOL disablesPlayer;
 @property (nonatomic) int manaCost;
 @property (nonatomic) int addWork;
+@property (strong, nonatomic) NSString *imageAnimationPath;
 @end

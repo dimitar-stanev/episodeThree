@@ -12,8 +12,6 @@
 
 -(void)initializeDeck {
     
-#warning INITIALIZE THE ACTIONS HERE !!!
-
     NSMutableArray *newDeck = [[NSMutableArray alloc] init];
     
     Action *energyMana1 = [[Action alloc ] init];
@@ -24,6 +22,7 @@
     energyMana1.disablesPlayer = NO;
     energyMana1.manaCost = 1;
     energyMana1.imagePath = @"coffe1Mana.png";
+    energyMana1.imageAnimationPath = @"sleep_140.png";
     [self addObject:energyMana1 toArray:newDeck count:4];
     
     Action *energyMana2 = [[Action alloc ] init];
@@ -34,6 +33,7 @@
     energyMana2.disablesPlayer = NO;
     energyMana2.manaCost = 4;
     energyMana2.imagePath = @"sleepy2Mana.png";
+    energyMana1.imageAnimationPath = @"sleep_140.png";
     [self addObject:energyMana2 toArray:newDeck count:4];
     
     Action *energyMana4 = [[Action alloc ] init];
@@ -44,6 +44,7 @@
     energyMana4.disablesPlayer = NO;
     energyMana4.manaCost = 4;
     energyMana4.imagePath = @"heat4Mana.png";
+    energyMana4.imageAnimationPath = @"fire_140.png";
     [self addObject:energyMana4 toArray:newDeck count:4];
     
     Action *concentrationMana1 = [[Action alloc ] init];
@@ -54,6 +55,7 @@
     concentrationMana1.disablesPlayer = NO;
     concentrationMana1.manaCost = 1;
     concentrationMana1.imagePath = @"virus1Mana.png";
+    concentrationMana1.imageAnimationPath = @"hack_140.png";
     [self addObject:concentrationMana1 toArray:newDeck count:4];
     
     Action *concentrationMana2 = [[Action alloc ] init];
@@ -64,6 +66,7 @@
     concentrationMana2.disablesPlayer = NO;
     concentrationMana2.manaCost = 2;
     concentrationMana2.imagePath = @"girlfriend2Mana.png";
+    concentrationMana2.imageAnimationPath = @"heart_140.png";
     [self addObject:concentrationMana2 toArray:newDeck count:4];
     
     Action *concentrationMana4 = [[Action alloc ] init];
@@ -74,6 +77,7 @@
     concentrationMana4.disablesPlayer = NO;
     concentrationMana4.manaCost = 4;
     concentrationMana4.imagePath = @"UnderConstruction4Mana.png";
+    concentrationMana4.imageAnimationPath = @"hammer_140.png";
     [self addObject:concentrationMana4 toArray:newDeck count:4];
     
     Action *healthMana1 = [[Action alloc ] init];
@@ -84,6 +88,7 @@
     healthMana1.disablesPlayer = NO;
     healthMana1.manaCost = 1;
     healthMana1.imagePath = @"Health1mana.png";
+    healthMana1.imageAnimationPath = @"head_each_140.png";
     [self addObject:healthMana1 toArray:newDeck count:4];
     
     Action *healthMana2 = [[Action alloc ] init];
@@ -94,6 +99,7 @@
     healthMana2.disablesPlayer = NO;
     healthMana2.manaCost = 2;
     healthMana2.imagePath = @"Health2Mana.png";
+    healthMana2.imageAnimationPath = @"sickness_140.png";
     [self addObject:healthMana2 toArray:newDeck count:4];
     
     Action *healthMana4 = [[Action alloc ] init];
@@ -104,6 +110,7 @@
     healthMana4.disablesPlayer = NO;
     healthMana4.manaCost = 4;
     healthMana4.imagePath = @"Health4mana.png";
+    healthMana4.imageAnimationPath = @"biohazard_140.png";
     [self addObject:healthMana4 toArray:newDeck count:4];
     
     Action *removePlayer = [[Action alloc ] init];
@@ -114,6 +121,7 @@
     removePlayer.disablesPlayer = YES;
     removePlayer.manaCost = 3;
     removePlayer.imagePath = @"shit3Mana.png";
+    removePlayer.imageAnimationPath = @"shit_140.png";
     [self addObject:removePlayer toArray:newDeck count:12];
 
 
@@ -126,6 +134,7 @@
     addWork.manaCost = 5;
     addWork.addWork = 10;
     addWork.imagePath = @"backToWork5Mana.png";
+    addWork.imageAnimationPath = @"clock_140.png";
     [self addObject:addWork toArray:newDeck count:5];
     
     self.allDrawnActions = newDeck;

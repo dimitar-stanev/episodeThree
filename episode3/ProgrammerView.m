@@ -10,6 +10,7 @@
 
 @implementation ProgrammerView {
     UIImageView *_programmerImage;
+    UIImageView *_effectImage;
 }
 
 /*
@@ -20,7 +21,7 @@
 }
 */
 
--(void)setProgrammerImage:(NSString *)programmerImage programmer:(Programmer*)programmer andDirection:(Direction)direction
+-(void)setProgrammerImage:(UIImage *)programmerImage programmer:(Programmer*)programmer andDirection:(Direction)direction
 {
     self.programmer = programmer;
     
@@ -48,13 +49,35 @@
         }
     }
     
-    _programmerImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:programmerImage]];
+    _programmerImage = [[UIImageView alloc] initWithImage:programmerImage];
     [_programmerImage setFrame:CGRectMake(0, 0, 70, 70)];
     [_programmerImage setTransform:CGAffineTransformMakeRotation(angle)];
     [_programmerImage setUserInteractionEnabled:NO];
 //    _programmerImage set
     [self addSubview:_programmerImage];
     
+    
+    _effectImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 70, 70)];
+    [_effectImage setUserInteractionEnabled:NO];
+    [_effectImage setAlpha:0];
+    [self addSubview:_effectImage];
+}
+
+-(void)showEffectImage:(NSString*)imageName
+{
+    [_effectImage setImage:[UIImage imageNamed:imageName]];
+    [UIView animateWithDuration:0.9 animations:^(void) {
+        [_effectImage setAlpha:1];
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.9 animations:^(void) {
+            [_effectImage setAlpha:0];
+        }];
+    }];
+}
+
+-(void)setProgrammerImage:(UIImage *)image
+{
+    [_programmerImage setImage:image];
 }
 
 @end

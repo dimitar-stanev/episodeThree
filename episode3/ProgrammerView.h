@@ -20,6 +20,8 @@ typedef enum {
 
 @property (strong, nonatomic) Programmer *programmer;
 
--(void)setProgrammerImage:(NSString *)programmerImage programmer:(Programmer*)programmer andDirection:(Direction)direction;
+-(void)setProgrammerImage:(UIImage *)programmerImage programmer:(Programmer*)programmer andDirection:(Direction)direction;
+-(void)showEffectImage:(NSString*)imageName;
+-(void)setProgrammerImage:(UIImage*)image;
 
 @end

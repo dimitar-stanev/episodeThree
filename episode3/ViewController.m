@@ -1,4 +1,3 @@
-//
 //  ViewController.m
 //  episode3
 //
@@ -124,31 +123,41 @@
 -(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
     
-    switch([indexPath row]) {
-        case 0: {
-            UIImage *img = [UIImage imageNamed: [self.player.currentActions[0] imagePath] ];
-            UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
-            [cell setBackgroundView:imageView];
-        } break;
-        case 1: {
-            UIImage *img = [UIImage imageNamed: [self.player.currentActions[1] imagePath] ];
-            UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
-            [cell setBackgroundView:imageView];
-        } break;
-        case 2: {
-            UIImage *img = [UIImage imageNamed: [self.player.currentActions[2] imagePath] ];
-            UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
-            [cell setBackgroundView:imageView];
-        } break;
-        case 3: {
-            UIImage *img = [UIImage imageNamed: [self.player.currentActions[3] imagePath] ];
-            UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
-            [cell setBackgroundView:imageView];
-        } break;
-    }
+//    switch([indexPath row]) {
+//        case 0: {
+//            UIImage *img = [UIImage imageNamed: [self.player.currentActions[0] imagePath] ];
+//            UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+//            [cell setBackgroundView:imageView];
+//        } break;
+//        case 1: {
+    
+    UIImage *img = [UIImage imageNamed: [self.player.currentActions[indexPath.row] imagePath] ];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+    [imageView setFrame:CGRectMake(5, 5, 70, 70)];
+    [cell addSubview:imageView];
+
+    UIImage *border = [UIImage imageNamed:@"button"];
+    UIImageView *borderView = [[UIImageView alloc] initWithImage:border];
+    [cell setBackgroundView:borderView];
+//        } break;
+//        case 2: {
+//            UIImage *img = [UIImage imageNamed: [self.player.currentActions[2] imagePath] ];
+//            UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+//            [cell setBackgroundView:imageView];
+//        } break;
+//        case 3: {
+//            UIImage *img = [UIImage imageNamed: [self.player.currentActions[3] imagePath] ];
+//            UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+//            [cell setBackgroundView:imageView];
+//        } break;
+//    }
 //    UIImage *img = [UIImage imageNamed:@"womens_circle_2.jpg"];
 //    UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
 //    [cell setBackgroundView:imageView];
+    [tableView setBounces:NO];
+    [tableView setBouncesZoom:NO];
+    [tableView setAlwaysBounceHorizontal:NO];
+    [tableView setAlwaysBounceVertical:NO];
      return cell;
  }
 
@@ -156,7 +165,7 @@
     NSLog(@"ROW SELECTED : %ld", (long)[indexPath row]);
     NSLog(@"CURRENT SELECTED CARD IS : %@", self.player.currentActions[[indexPath row]]);
     
-    [tableView reloadData];
+//    [tableView reloadData];
 
     if(self.isActionSelected) {
         self.isActionSelected = NO;
@@ -168,16 +177,24 @@
         _gameSceneView.currentChosenAction = nil;
     }
     else {
-        if ( [self.player.currentActions[[indexPath row]] manaCost] < self.player.manaPointsLeft) {
+        if ( [self.player.currentActions[[indexPath row]] manaCost] <= self.player.manaPointsLeft) {
             self.isActionSelected = YES;
             _gameSceneView.isActionSelected = YES;
-            [UIView animateWithDuration:0.7 animations:^(void){
-                [[tableView cellForRowAtIndexPath:indexPath].backgroundView setAlpha:0.5];
-            }];
             self.currentChosenAction = self.player.currentActions[[indexPath row]];
             self.indexOfActionSelected = (int)[indexPath row];
             _gameSceneView.currentChosenAction = self.player.currentActions[[indexPath row]];
             NSLog(@"%f", self.currentChosenAction.effectOnConcentration);
+        }
+        else {
+            self.isActionSelected = NO;
+            _gameSceneView.isActionSelected = NO;
+            self.currentChosenAction = nil;
+            [UIView animateWithDuration:0.3 animations:^(void){
+                [self.manaPointsCounter setTextColor: [UIColor redColor]];
+            } completion:^(BOOL finished) {
+                [self.manaPointsCounter setTextColor: [UIColor blackColor]];
+            }];
+            [[tableView cellForRowAtIndexPath:indexPath] setSelected:NO];
         }
     }
 
@@ -228,12 +245,14 @@
 
 -(void)loseGame
 {
-    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You lose" message:[NSString stringWithFormat:@"You were only %.1f seconds away from victory. Suck less next time.", 180 - _timePassed] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
 }
 
 -(void)winGame
 {
-    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You win" message:[NSString stringWithFormat:@"The suckers only got to finish %.1f%% of the project.", 100*(_progress/_maxProgress)] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
 }
 
 @end
