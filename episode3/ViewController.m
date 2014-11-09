@@ -177,7 +177,17 @@
 }
 
 -(void)playedCardSuccessful:(BOOL)successful {
-    //TODO
+    if (successful == YES) {
+        [self.player.currentActions removeObject:self.currentChosenAction];
+        [self.player.currentActions addObject:[self.drawnDeck replaceCard]];
+        [self.rightButtonsTable reloadData];
+        self.isActionSelected = NO;
+        self.currentChosenAction = nil;
+    }
+    else {
+        self.isActionSelected = NO;
+        self.currentChosenAction = nil;
+    }
 }
 
 @end
