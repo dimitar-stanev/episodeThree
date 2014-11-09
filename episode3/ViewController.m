@@ -35,6 +35,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.gameSceneView = [[[NSBundle mainBundle] loadNibNamed:@"GameSceneView"owner:nil options:nil] objectAtIndex:0];
+    [self.gameSceneView setVc:self];
     [self.gameSceneHolderView addSubview:self.gameSceneView];
     
     self.rightButtonsTable.delegate = self;
@@ -178,13 +179,14 @@
 
 -(void)playedCardSuccessful:(BOOL)successful {
     if (successful == YES) {
-        [self.player.currentActions removeObject:self.currentChosenAction];
-        [self.player.currentActions addObject:[self.drawnDeck replaceCard]];
+        NSUInteger index = [self.player.currentActions indexOfObject:self.currentChosenAction];
+        self.player.currentActions[index] =  [self.drawnDeck replaceCard];
         [self.rightButtonsTable reloadData];
         self.isActionSelected = NO;
         self.currentChosenAction = nil;
     }
     else {
+        [self.rightButtonsTable reloadData];
         self.isActionSelected = NO;
         self.currentChosenAction = nil;
     }

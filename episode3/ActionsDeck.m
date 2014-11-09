@@ -131,10 +131,10 @@
 
 -(NSMutableArray*)drawCards {
     
-    int firstCard = arc4random() % (self.allDrawnActions.count+1);
-    int secondCard = arc4random() % (self.allDrawnActions.count+1);
-    int thirdCard = arc4random() % (self.allDrawnActions.count+1);
-    int fourthCard = arc4random() % (self.allDrawnActions.count+1);
+    int firstCard = arc4random() % (self.allDrawnActions.count);
+    int secondCard = arc4random() % (self.allDrawnActions.count);
+    int thirdCard = arc4random() % (self.allDrawnActions.count);
+    int fourthCard = arc4random() % (self.allDrawnActions.count);
     
     NSMutableArray *arrayToReturn = [[NSMutableArray alloc] initWithObjects: self.allDrawnActions[firstCard], self.allDrawnActions[secondCard], self.allDrawnActions[thirdCard], self.allDrawnActions[fourthCard], nil ];
 
@@ -148,7 +148,7 @@
 }
 
 -(Action*) replaceCard {
-    int cardIndex = arc4random() % (self.allDrawnActions.count+1);
+    int cardIndex = arc4random() % (self.allDrawnActions.count);
     [self.allDrawnActions removeObjectAtIndex:cardIndex];
     return self.allDrawnActions[cardIndex];
 }
